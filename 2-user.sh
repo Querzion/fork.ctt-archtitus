@@ -28,7 +28,7 @@ PKGS=(
 'btop-git'
 'brave-bin'                                 # Brave Browser
 'cef-minimal'           		            # OBS Studio Browser Dependency
-'ddccontrol'                    	    	# OBS Studio Browser Dependency
+'ddccontrol'                    	    	# QEMU-KVM Dependency
 'dxvk-bin'                                  # DXVK DirectX to Vulcan
 'fluent-reader'                             # RSS Feed Client
 'github-desktop-bin'                        # Github Desktop sync.
