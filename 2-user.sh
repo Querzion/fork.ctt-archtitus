@@ -26,16 +26,16 @@ PKGS=(
 'autojump'
 'awesome-terminal-fonts'
 'btop-git'
-'brave-bin' # Brave Browser
-'cef-minimal'
-'ddccontrol'
-'dxvk-bin' # DXVK DirectX to Vulcan
-'fluent-reader'
-'github-desktop-bin' # Github Desktop sync
+'brave-bin'                                 # Brave Browser
+'cef-minimal'           		            # OBS Studio Browser Dependency
+'ddccontrol'                    	    	# OBS Studio Browser Dependency
+'dxvk-bin'                                  # DXVK DirectX to Vulcan
+'fluent-reader'                             # RSS Feed Client
+'github-desktop-bin'                        # Github Desktop sync.
 'lightly-git'
 'lightlyshaders-git'
-'mailspring'
-'mangohud' # Gaming FPS Counter
+'mailspring'                                # E-Mail Client.
+'mangohud'                                  # Gaming FPS Counter.
 'mangohud-common'
 'nerd-fonts-fira-code'
 'nordic-darker-standard-buttons-theme'
@@ -45,22 +45,22 @@ PKGS=(
 'noto-fonts-emoji'
 'papirus-icon-theme'
 'plasma-pa'
-'ocs-url' # install packages from websites
+'ocs-url'                                   # install packages from websites.
 'opencl-amd'
 'sddm-nordic-theme-git'
-'snapper-gui-git'
-'spotify'
+'snapper-gui-git'                           # GUI for Snapper.
+'spotify'                                   # Music Application.
 'ttf-ms-fonts'
 'ttf-droid'
 'ttf-hack'
-'ttf-meslo' # Nerdfont package
+'ttf-meslo'                                 # Nerdfont package.
 'ttf-roboto'
-'zoom' # video conferences
+'zoom'                                      # video conferences.
 'snap-pac'
 'snapd'
-'vlc-luajit'
-'vlc-bittorrent'
-'obs-studio-browser'
+'vlc-luajit'                            	# VLC Fork - OBS Studio Browser Dependency.
+'vlc-bittorrent'                            # VLC Torrent - Watch Movies while they download.
+'obs-studio-browser'                        # OBS Studio with the Browser Plugin preinstalled.
 )
 
 for PKG in "${PKGS[@]}"; do

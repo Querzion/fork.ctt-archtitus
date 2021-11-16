@@ -55,7 +55,7 @@ pacman -Sy --noconfirm
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
-'mesa' # Essential Xorg First
+'mesa'								# Essential Xorg First
 'xorg'
 'xorg-server'
 'xorg-apps'
@@ -63,14 +63,14 @@ PKGS=(
 'xorg-xkill'
 'xorg-xinit'
 'xterm'
-'plasma-desktop' # KDE Load second
-'alsa-plugins' # audio plugins
-'alsa-utils' # audio utils
+'plasma-desktop'					# KDE Load second
+'alsa-plugins'						# audio plugins
+'alsa-utils'						# audio utils
 'archlinux-keyring'
-'ark' # compression
+'ark' 								# compression
 'audiocd-kio' 
-'autoconf' # build
-'automake' # build
+'autoconf' 							# build
+'automake' 							# build
 'base'
 'bash-completion'
 'bind'
@@ -80,25 +80,26 @@ PKGS=(
 'bluez'
 'bluez-libs'
 'bluez-utils'
+'boost'
 'breeze'
 'breeze-gtk'
 'bridge-utils'
 'btrfs-progs'
-'celluloid' # video players
+'celluloid' 						# video players
 'cmatrix'
 'cronie'
 'cups'
 'dialog'
 'discover'
-'discord'
-'dmidecode'
-'dnsmasq'
+'discord'							# Chat/Community Application
+'dmidecode'							# QEMU-KVM Dependency
+'dnsmasq'							# QEMU-KVM Dependency
 'dolphin'
 'dosfstools'
 'dtc'
-'ebtables'
-'edk2-ovmf'
-'efibootmgr' # EFI boot
+'ebtables'							# QEMU-KVM Dependency
+'edk2-ovmf'							# QEMU-KVM Dependency
+'efibootmgr' 						# EFI boot
 'egl-wayland'
 'exa'
 'exfat-utils'
@@ -109,16 +110,16 @@ PKGS=(
 'fuse2'
 'fuse3'
 'fuseiso'
-'gamemode'
-'gcc'
-'geany'
-'gimp' # Photo editing
+'gamemode'							# Game Mode for Lutris/Steam
+'gcc'								# Compiler
+'geany'								# Word-Processor Development
+'gimp' 								# Photo editing
 'git'
-'gparted' # partition management
+'gparted' 							# partition management
 'gptfdisk'
-'grub'
-'grub-btrfs'
-'grub-customizer'
+'grub'								# Boot-Loader
+'grub-btrfs'						# Boot-Loader Extension - Snapper Dependency
+'grub-customizer'					# Boot-Loader Extension - Themeing
 'gst-libav'
 'gst-plugins-good'
 'gst-plugins-ugly'
@@ -126,51 +127,51 @@ PKGS=(
 'haveged'
 'htop'
 'inkscape'
-'iptables'
+'iptables'							# QEMU-KVM Dependency
 'jdk-openjdk' # Java 17
-'kate'
+'kate'								# Word-Processor
 'kcodecs'
 'kcoreaddons'
 'kdenlive'
 'kdeplasma-addons'
 'kde-gtk-config'
-'keepassxc'
+'keepassxc'							# Password Manager
 'kinfocenter'
 'kscreen'
 'kvantum-qt5'
 'kitty'
-'konsole'
+'konsole'							# Terminal
 'kscreen'
-'ktorrent'
+'ktorrent'							# Torrent Download Manager
 'layer-shell-qt'
 'libdvdcss'
-'libquestfs'
+'libquestfs'						# QEMU-KVM Dependency
 'libnewt'
-'libreoffice'
+'libreoffice'						# Office Suite
 'libtool'
-'libvirt'
+'libvirt'							# QEMU-KVM Dependency
 'linux'
 'linux-firmware'
 'linux-headers'
 'lsof'
-'lutris'
+'lutris'							# Game Install Client
 'lzop'
 'm4'
 'make'
 'milou'
-'nano'
-'ncdu'
-'neofetch'
-'networkmanager'
-'notepadqq'
-'ntfs-3g'
+'nano'								# Terminal Application - Word-Processor
+'ncdu'								# Terminal Application - Disk-Space Usage
+'neofetch'							# Terminal Application - System Information
+'networkmanager'					# Network Manager - System Dependency
+'notepadqq'							# Word-Processor - Development & Other
+'ntfs-3g'							# NTFS Mount - Read/Write/Execute (NTFS compatibility is added to the Linux Kernel 5.15+)
 'ntp'
 'okular'
-'openbsd-netcat'
+'openbsd-netcat'					# QEMU-KVM Dependency
 'openssh'
 'os-prober'
 'oxygen'
-'p7zip'
+'p7zip'								# File Compression Tool
 'pacman-contrib'
 'patch'
 'picom'
@@ -180,52 +181,52 @@ PKGS=(
 'powerdevil'
 'powerline-fonts'
 'print-manager'
-'pulseaudio'
-'pulseaudio-alsa'
-'pulseaudio-bluetooth'
-'python3'
-'python-notify2'
-'python-psutil'
-'python-pyqt5'
-'python-pip'
-'qemu'
-'retroarch'
+'pulseaudio'						# Audio Driver
+'pulseaudio-alsa'					# Audio Driver
+'pulseaudio-bluetooth'				# Audio Driver - Bluetooth
+'python3'							# Development & Protonup Dependency
+'python-notify2'					# Development
+'python-psutil'						# Development
+'python-pyqt5'						# Development
+'python-pip'						# Development & Protonup Dependency
+'qemu'								# QEMU - HyperVisor (Virtual Machine)
+'retroarch'							# Retro Games Emulation Client
 'rsync'
-'sddm'
-'sddm-kcm'
-'snapper'
-'sndio'
+'sddm'								# Window Manager
+'sddm-kcm'							# Window Manager Extension
+'snapper'							# Backup Tool
+'sndio'								
 'spectacle'
 'steam'
 'sudo'
-'swig'
+'swig'								# OBS Studio Browser Dependency
 'swtpm'
 'synergy'
 'systemsettings'
-'terminator'
+'terminator'						# Terminal
 'terminus-font'
 'traceroute'
-'tree'
-'ufw'
-'unrar'
-'unzip'
+'tree'								# Terminal Application - Shows Folder Tree Structure
+'ufw'								# Fire Wall
+'unrar'								# Compression Extension
+'unzip'								# Compression Extension
 'usbutils'
-'vde2'
-'vfio'
-'vim'
-'virt-manager'
-'virt-viewer'
+'vde2'								# QEMU-KVM Dependency
+'vfio'								# QEMU-KVM Dependency
+'vim'								# Word-Processor
+'virt-manager'						# QEMU-KVM Dependency
+'virt-viewer'						# QEMU-KVM Dependency
 'wget'
 'which'
-'wine-gecko'
-'wine-mono'
-'winetricks'
-'xed'
+'wine-gecko'						# Windows Compatibility Layer
+'wine-mono'							# Wine Font
+'winetricks'						# Wine Extension
+'xed'								# Terminal Word-Processor
 'xdg-desktop-portal-kde'
 'xdg-user-dirs'
-'yakuake'
+'yakuake'							# Drop-Down Terminal (F12)
 'zeroconf-ioslave'
-'zip'
+'zip'								# Compression Extension
 'zsh'
 'zsh-syntax-highlighting'
 'zsh-autosuggestions'
