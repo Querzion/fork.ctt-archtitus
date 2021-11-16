@@ -41,7 +41,6 @@ PKGS=(
 'noto-fonts-emoji'
 'papirus-icon-theme'
 'plasma-pa'
-'protonup-qt'
 'ocs-url' # install packages from websites.
 'sddm-nordic-theme-git'
 'snapper-gui-git'
@@ -63,6 +62,7 @@ PKGS=(
 'spotify'
 'obs-studio-browser' # OBS Studio with the Browser Plugin preinstalled.
 'opencl-amd'
+'protonup-qt'
 )
 
 for PKG in "${PKGS[@]}"; do
