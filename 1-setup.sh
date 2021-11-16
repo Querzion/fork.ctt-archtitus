@@ -34,10 +34,10 @@ echo "       Setup Language to US and set locale       "
 echo "-------------------------------------------------"
 sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 sed -i 's/^#sv_SE.UTF-8 UTF-8/sv_SE.UTF-8 UTF-8/' /etc/locale.gen
-locale-gen
+locale-gen "en_US.UTF-8 sv_SE.UTF-8"
 timedatectl --no-ask-password set-timezone Europe/Stockholm
 timedatectl --no-ask-password set-ntp 1
-localectl --no-ask-password set-locale LANGUAGE = "", LC_ADDRESS = "en_US.UTF-8", LC_NAME = "en_US.UTF-8", LC_MONETARY = "sv_SE.UTF-8", LC_TIME = "sv_SE.UTF-8", LC_PAPER = "en_US.UTF-8", LC_IDENTIFICATION = "en_US.UTF-8", LC_TELEPHONE = "en_US.UTF-8", LC_MESSAGES = "en_US.UTF-8", LC_MEASUREMENT = "sv_SE.UTF-8", LC_CTYPE = "en_US.UTF-8", LC_COLLATE = "sv_SE.UTF-8", LC_NUMERIC = "sv_SE.UTF-8", LANG = "en_US.UTF-8", LC_ALL = (unset)
+localectl --no-ask-password set-locale LANG = "en_US.UTF-8", LC_ADDRESS = "en_US.UTF-8", LC_NAME = "en_US.UTF-8", LC_MONETARY = "sv_SE.UTF-8", LC_TIME = "sv_SE.UTF-8", LC_PAPER = "en_US.UTF-8", LC_IDENTIFICATION = "en_US.UTF-8", LC_TELEPHONE = "en_US.UTF-8", LC_MESSAGES = "en_US.UTF-8", LC_MEASUREMENT = "sv_SE.UTF-8", LC_CTYPE = "en_US.UTF-8", LC_COLLATE = "sv_SE.UTF-8", LC_NUMERIC = "sv_SE.UTF-8", LC_ALL = "en_US.UTF-8"
 
 # Set keymaps
 localectl --no-ask-password set-keymap dvorak-sv-a1
