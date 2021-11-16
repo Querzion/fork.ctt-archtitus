@@ -33,6 +33,7 @@ echo "-------------------------------------------------"
 echo "       Setup Language to US and set locale       "
 echo "-------------------------------------------------"
 sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^#sv_SE.UTF-8 UTF-8/sv_SE.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 timedatectl --no-ask-password set-timezone Europe/Stockholm
 timedatectl --no-ask-password set-ntp 1
