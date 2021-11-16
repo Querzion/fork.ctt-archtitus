@@ -192,6 +192,7 @@ PKGS=(
 'swtpm'
 'synergy'
 'systemsettings'
+'teams'
 'terminator'
 'terminus-font'
 'traceroute'
