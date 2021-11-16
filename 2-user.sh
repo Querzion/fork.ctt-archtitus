@@ -49,8 +49,10 @@ PKGS=(
 'ttf-meslo' # Nerdfont package.
 'ttf-roboto'
 'ttf-ms-fonts'
+'ttf-vista-fonts'
 'zoom'
 'snap-pac'
+'visual-studio-code-bin'
 'vlc-luajit'
 'vlc-bittorrent'
 'cef-minimal'
