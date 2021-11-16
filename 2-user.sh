@@ -26,16 +26,12 @@ PKGS=(
 'autojump'
 'awesome-terminal-fonts'
 'btop-git'
-'brave-bin'                                 # Brave Browser
-'cef-minimal'           		            # OBS Studio Browser Dependency
-'ddccontrol'                    	    	# QEMU-KVM Dependency
-'dxvk-bin'                                  # DXVK DirectX to Vulcan
-'fluent-reader'                             # RSS Feed Client
-'github-desktop-bin'                        # Github Desktop sync.
+'brave-bin' # Brave Browser
+'dxvk-bin' # DXVK DirectX to Vulcan
+'github-desktop-bin' # Github Desktop sync.
 'lightly-git'
 'lightlyshaders-git'
-'mailspring'                                # E-Mail Client.
-'mangohud'                                  # Gaming FPS Counter.
+'mangohud' # Gaming FPS Counter.
 'mangohud-common'
 'nerd-fonts-fira-code'
 'nordic-darker-standard-buttons-theme'
@@ -45,22 +41,25 @@ PKGS=(
 'noto-fonts-emoji'
 'papirus-icon-theme'
 'plasma-pa'
-'ocs-url'                                   # install packages from websites.
-'opencl-amd'
+'ocs-url' # install packages from websites.
 'sddm-nordic-theme-git'
-'snapper-gui-git'                           # GUI for Snapper.
-'spotify'                                   # Music Application.
-'ttf-ms-fonts'
+'snapper-gui-git'
 'ttf-droid'
 'ttf-hack'
-'ttf-meslo'                                 # Nerdfont package.
+'ttf-meslo' # Nerdfont package.
 'ttf-roboto'
-'zoom'                                      # video conferences.
+'ttf-ms-fonts'
+'zoom'
 'snap-pac'
-'snapd'
-'vlc-luajit'                            	# VLC Fork - OBS Studio Browser Dependency.
-'vlc-bittorrent'                            # VLC Torrent - Watch Movies while they download.
-'obs-studio-browser'                        # OBS Studio with the Browser Plugin preinstalled.
+'vlc-luajit'
+'vlc-bittorrent'
+'cef-minimal'
+'ddccontrol'
+'fluent-reader' # RSS Feed Client
+'mailspring' # E-Mail Client.
+'spotify'
+'obs-studio-browser' # OBS Studio with the Browser Plugin preinstalled.
+'opencl-amd'
 )
 
 for PKG in "${PKGS[@]}"; do

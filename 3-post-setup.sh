@@ -38,6 +38,12 @@ systemctl disable dhcpcd.service
 systemctl stop dhcpcd.service
 systemctl enable NetworkManager.service
 systemctl enable bluetooth
+systemctl enable libvirtd.service
+systemctl enable virtlogd.socket
+virsh net-autostart default
+virsh net-start default
+
+
 echo "
 ###############################################################################
 # Cleaning
