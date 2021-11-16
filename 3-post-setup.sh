@@ -43,6 +43,8 @@ systemctl enable ebtables
 systemctl enable libvirtd.service
 systemctl enable virtlogd.socket
 
+localectl --no-ask-password set-keymap dvorak-sv-a1
+
 echo "
 ###############################################################################
 # Cleaning
