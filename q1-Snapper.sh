@@ -94,7 +94,7 @@ systemctl start snapper-cleanup.timer
 systemctl start grub-btrfs.path
 systemctl enable grub-btrfs.path
 
-snapper -c root create -c timeline --description AfterInstall
+snapper -c root create -c timeline --description AfterInstallBeforeReboot
 snapper -c root list
 
 clear && echo -e "

@@ -129,7 +129,7 @@ echo -e "
 #######################################################################
 "
 sleep 5s
-snapper -c root create -c timeline --description FreshInstall-Before
+snapper -c root create -c timeline --description AfterSnapperReboot
 
 sleep 30s
 
