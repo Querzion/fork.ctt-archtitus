@@ -586,20 +586,20 @@ echo -e "
 sleep 3s
 echo -e "
         The Snapper Timeline Timer. Is it up?"
-        systemctl snapper-timeline.timer
+        systemctl status snapper-timeline.timer
 
 sleep 5s
 echo -e "
         The Snapper Cleanup Timer. Is it up?"
-        systemctl snapper-cleanup.timer
+        systemctl status snapper-cleanup.timer
 
 sleep 5s
 echo -e "
         The Grub BtrFS Path. Is it up?"
-        systemctl grub-btrfs.path
+        systemctl status grub-btrfs.path
 
 
-sleep 10s
+sleep 15s
 
 clear && echo -e "                                                          
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
