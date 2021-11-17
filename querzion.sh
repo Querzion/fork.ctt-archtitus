@@ -125,7 +125,7 @@ echo -e "
 #######################################################################
 ###
 ###          WAIT! STEAM WILL START SHORTLY READ THIS!
-###     DO NOT TOUCH THE STEAM WINDOW. TIMER SET  -  10 MIN
+###     DO NOT TOUCH THE STEAM WINDOW. TIMER SET  -  5 MIN
 ###       GO AHEAD AND WAIT FOR IT TO START UP AND UPDATE
 ###                IF YOU HAVE THE TIME - LOG IN
 ###           WHEN YOU ARE DONE, JUST PRESS CTRL + C
@@ -137,7 +137,7 @@ echo -e "
             Have to start steam in order to ensure that,
                 protonup will function properly."
 sleep 5s
-timeout 10m steam
+timeout 5m steam
 
 timeout 5s clear && echo -e "
  ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ███╗   ██╗██╗   ██╗██████╗ 
@@ -157,13 +157,18 @@ echo -e "
 #######################################################################
 "
 sleep 3s
-echo -e "   ### Installing ProtonUp ###"
+echo -e "
+                    ### Installing ProtonUp ###"
 timeout 2s sudo pip3 install protonup
 
-echo -e "   ### Setting up Default Download Folder ###"
+sleep 10s
+echo -e "
+            ### Setting up Default Download Folder ###"
 timeout 2s protonup -d "~/.steam/root/compatibilitytools.d/"
 
-echo -e "   ### Downloading the atest ProtonUp GE file ###"
+sleep 10s
+echo -e "
+           ### Downloading the atest ProtonUp GE file ###"
 timeout 2s protonup
 
 timeout 2s echo -e "
@@ -174,7 +179,8 @@ timeout 2s echo -e "
 #######################################################################
 "
 sleep 3s
-echo -e "   ### Listing Installed ProtonUp GE Files ###"
+echo -e "
+            ### Listing Installed ProtonUp GE Files ###"
 protonup -l
 
 sleep 10s
@@ -196,36 +202,53 @@ timeout 2s echo -e "
 #######################################################################
 "
 sleep 3s
-echo -e "   ### Starting ebtables ###"
+echo -e "
+                    ### Starting ebtables ###"
 sudo systemctl enable ebtables
 sudo systemctl start ebtables
 
-echo -e "   ### starting libvirtd ###"
+sleep 10s
+
+echo -e "
+                    ### starting libvirtd ###"
 sudo systemctl disable libvirtd.service
 sudo systemctl start libvirtd.service
 sudo systemctl enable libvirtd.service
 
-echo -e "   ### Starting virtlogd ###"
+sleep 10s
+
+echo -e "
+                    ### Starting virtlogd ###"
 sudo systemctl disable virtlogd.socket
 sudo systemctl start virtlogd.socket
 sudo systemctl enable virtlogd.socket
 
-echo -e "   ### Setting up virsh ###"
+sleep 10s
+
+echo -e "
+                    ### Setting up virsh ###"
 sudo virsh net-autostart default
 sudo virsh net-start default
 
-echo -e "   ### Configuring libvirtd ###"
+sleep 10s
+
+echo -e "
+                    ### Configuring libvirtd ###"
 sudo sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
 sudo sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
 
-echo -e "   ### Adding user and group for libvirt ###"
+sleep 10s
+
+echo -e "
+            ### Adding user and group for libvirt ###"
 sudo usermod -a -G libvirt $(whoami)
 newgrp libvirt
 
-echo -e "   ### Restarting libvirtd ###"
+echo -e "
+                    ### Restarting libvirtd ###"
 sudo systemctl restart libvirtd.service
 
-sleep 3s
+sleep 1s
 
 clear && echo -e "
 #######################################################################
@@ -267,15 +290,17 @@ echo -e "
 ###
 #######################################################################
 "
-echo -e "   ### Adding IOMMU to GRUB ###"
+echo -e "
+                    ### Adding IOMMU to GRUB ###"
 sleep 1s
 sudo sed -i s/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
-
-echo -e "   ### Generating a new grub.cfg file ###"
+sleep 10s
+echo -e "
+                ### Generating a new grub.cfg file ###"
 sleep 2s
-grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-sleep 3s
+sleep 5s
 timeout 10s clear && echo -e "
               ███████╗████████╗██╗   ██╗███████╗███████╗
               ██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝
@@ -293,32 +318,23 @@ echo -e "
 #######################################################################
 "
 sleep 3s
-echo -e "   ### Change Parallel Downloads from 5 to 10 ###" 
+echo -e "
+            ### Change Parallel Downloads from 5 to 10 ###"
 sleep 1s
 sudo sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 
-sleep 3s
-echo -e "   ### Pushing Text to locale.conf ###" 
+sleep 10s
+echo -e "
+
+          ### Copying locale.conf from ArchTitus to /etc/ ###"
 sleep 1s
-sudo sed 's/t/T/g LANGUAGE = "",
-        LANG = "en_US.UTF-8",
-        LC_ADDRESS = "en_US.UTF-8",
-        LC_NAME = "en_US.UTF-8",
-        LC_MONETARY = "sv_SE.UTF-8",
-        LC_PAPER = "en_US.UTF-8",
-        LC_IDENTIFICATION = "en_US.UTF-8",
-        LC_TELEPHONE = "en_US.UTF-8",
-        LC_MESSAGES = "en_US.UTF-8",
-        LC_MEASUREMENT = "sv_SE.UTF-8",
-        LC_CTYPE = "en_US.UTF-8",
-        LC_TIME = "sv_SE.UTF-8",
-        LC_COLLATE = "sv_SE.UTF-8",
-        LC_NUMERIC = "sv_SE.UTF-8",
-        LC_ALL = (unset) > /etc/locale.conf2
+sudo cp ~/ArchTitus/etc/locale.conf /etc/
         
-sleep 3s
-clear && echo -e "   ### Changeing startup keyboard layout from QWERTY to DVORAK ###" 
+sleep 10s
+clear && echo -e "
+     ### Changeing startup keyboard layout from QWERTY to DVORAK ###"
 sleep 5s
+
 
 
 timeout 2s clear && echo -e "

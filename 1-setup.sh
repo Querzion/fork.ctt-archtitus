@@ -229,7 +229,6 @@ PKGS=(
 'libquestfs'
 'vde2'
 'vfio'
-'archlinux-keyring'
 'ebtables'
 'iptables'
 
