@@ -23,9 +23,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 ln -s "$HOME/zsh/.zshrc" $HOME/.zshrc
 
 PKGS=(
-'aic94xx-firmware'
-'wd719x'
-'xhci_pci'
 'autojump'
 'awesome-terminal-fonts'
 'btop-git'
@@ -67,6 +64,10 @@ PKGS=(
 'opencl-amd'
 'protonup-qt'
 'heroic-games-launcher-bin'
+### Firmware Addons
+'mkinitcpio-firmware' # Optional firmware for the default linux kernel to get rid of the annoying 'WARNING: Possibly missing firmware for module:' messages
+#'aic94xx-firmware' # Adaptec SAS 44300, 48300, 58300 Sequencer Firmware for AIC94xx driver
+#'wd719x-firmware' # Driver for Western Digital WD7193, WD7197 and WD7296 SCSI cards
 )
 
 for PKG in "${PKGS[@]}"; do

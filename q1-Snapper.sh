@@ -574,7 +574,7 @@ echo -e "
 sudo systemctl start snapper-timeline.timer
 sleep 3s
 echo -e "       
-        Done!"
+        Is It Done? We Will See in the Next Section."
         
 sleep 1s
 
@@ -592,7 +592,7 @@ echo -e "
 sudo systemctl start snapper-cleanup.timer
 sleep 3s
 echo -e "       
-        Done!"
+        Is It Done? We Will See in the Next Section."
 
 sleep 1s
 
@@ -601,7 +601,7 @@ echo -e "
 sudo systemctl enable grub-btrfs.path
 sleep 3s
 echo -e "       
-        Done!"
+        Is It Done? We Will See in the Next Section."
 
 sleep 1s
 
@@ -610,7 +610,7 @@ echo -e "
 sudo systemctl start grub-btrfs.path
 sleep 3s
 echo -e "       
-        Done!"
+        Is It Done? We Will See in the Next Section."
 
 sleep 5s
 
