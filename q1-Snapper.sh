@@ -99,7 +99,80 @@ snapper -c root list
 clear && echo -e "
 
 \e[31m              REBOOTING IN 15 SECONDS\e[0m"
-sleep 15
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 14 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 13 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 12 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 11 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 10 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 09 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 08 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 07 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 06 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 05 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 04 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 03 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 02 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 01 SECONDS\e[0m"
+sleep 1
+clear && echo -e "
+
+\e[31m              REBOOTING IN 00 SECONDS\e[0m"
 
 reboot
 
