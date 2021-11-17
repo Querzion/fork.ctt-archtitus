@@ -112,7 +112,28 @@ echo -e "
 "
 sleep 15s
 
-timeout 5s clear && echo -e "
+echo -e "
+       ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗
+       ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+       ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
+       ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
+       ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
+       ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+"
+sleep 1s
+echo -e "
+#######################################################################
+###
+###                     NEED TO MAKE A SNAPSHOT
+###
+#######################################################################
+"
+sleep 5s
+snapper -c root create -c timeline --description FreshInstall-Before
+
+sleep 30s
+
+clear && echo -e "
             ███████╗████████╗███████╗ █████╗ ███╗   ███╗
             ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
             ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -333,10 +354,45 @@ echo -e "
 sleep 1s
 sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 
+sleep 2s
+
+echo -e "
+                    ### Installing Starship ###"
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+echo -e "
+                    ### Rebuilding the .bashrc ###
+                       ### ls -al > ls only ###
+                     ### Activating starship ###"
+
+sleep 3s
+
+mv ~/.bashrc ~/.bashrc.bak
+
+sleep 1s
+
+cat <<EOF > ~/.bashrc
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# alias ls='ls --color=auto'
+alias ls='exa -al --color=always --group-directories-first'
+PS1='[\u@\h \W]\$ '
+
+# Starship
+eval "$(starship init bash)"
+
+EOF
+
+
 sleep 10s
 echo -e "
 
-          ### Copying locale.conf from ArchTitus to /etc/ ###"
+          ### Creating a locale.conf file ###"
 sleep 1s
 # sudo cp ~/ArchTitus/etc/locale.conf /etc/
 
@@ -357,16 +413,34 @@ cat <<EOF > /etc/locale.conf
         LC_NUMERIC = "sv_SE.UTF-8",
         LC_ALL = ""
 EOF
-        
+
+locale-gen
+locale
 sleep 10s
-clear && echo -e "
+
+echo -e "
      ### Changeing startup keyboard layout from QWERTY to DVORAK ###"
+
 sleep 5s
+
 cat <<EOF > /etc/vconsole.conf
 KEYMAP=dvorak-sv-a1
 EOF
 
+
+echo -e "
+
+                    ### Install Snap & Snap Store & Wonderwall ###"
+sleep 2s
+
 exit
+sudo yay -S snapd && 1
+
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+snap install snap-store wonderwall
+
 
 timeout 10s clear && echo -e "
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
