@@ -23,6 +23,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 ln -s "$HOME/zsh/.zshrc" $HOME/.zshrc
 
 PKGS=(
+'aic94xx-firmware'
+'wd719x'
+'xhci_pci'
 'autojump'
 'awesome-terminal-fonts'
 'btop-git'
