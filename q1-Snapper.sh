@@ -1,5 +1,6 @@
-sleep 3s
-echo -e "\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
+echo -e "
+
+\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
 
     
 sleep 10s
