@@ -204,6 +204,7 @@ timeout 2s echo -e "
 sleep 3s
 echo -e "
                     ### Starting ebtables ###"
+sudo systemctl disable ebtables
 sudo systemctl enable ebtables
 sudo systemctl start ebtables
 
@@ -328,16 +329,39 @@ echo -e "
 
           ### Copying locale.conf from ArchTitus to /etc/ ###"
 sleep 1s
-sudo cp ~/ArchTitus/etc/locale.conf /etc/
+# sudo cp ~/ArchTitus/etc/locale.conf /etc/
+
+sudo su
+
+cat <<EOF > /etc/locale.conf
+    LANGUAGE = "",
+        LANG = "en_US.UTF-8",
+        LC_ADDRESS = "en_US.UTF-8",
+        LC_NAME = "en_US.UTF-8",
+        LC_MONETARY = "sv_SE.UTF-8",
+        LC_PAPER = "en_US.UTF-8",
+        LC_IDENTIFICATION = "en_US.UTF-8",
+        LC_TELEPHONE = "en_US.UTF-8",
+        LC_MESSAGES = "en_US.UTF-8",
+        LC_MEASUREMENT = "sv_SE.UTF-8",
+        LC_CTYPE = "en_US.UTF-8",
+        LC_TIME = "sv_SE.UTF-8",
+        LC_COLLATE = "sv_SE.UTF-8",
+        LC_NUMERIC = "sv_SE.UTF-8",
+        LC_ALL = ""
+EOF
         
 sleep 10s
 clear && echo -e "
      ### Changeing startup keyboard layout from QWERTY to DVORAK ###"
 sleep 5s
+cat <<EOF > /etc/vconsole.conf
+KEYMAP=dvorak-sv-a1
+EOF
 
+exit
 
-
-timeout 2s clear && echo -e "
+timeout 10s clear && echo -e "
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
