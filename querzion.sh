@@ -132,7 +132,11 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 20s
+sleep 15s
+echo -e "
+            Have to start steam in order to ensure that,
+                protonup will function properly."
+sleep 5s
 timeout 10m steam
 
 timeout 5s clear && echo -e "
