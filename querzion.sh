@@ -139,7 +139,7 @@ echo -e "
 sleep 5s
 timeout 5m steam
 
-timeout 5s clear && echo -e "
+clear && echo -e "
  ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ███╗   ██╗██╗   ██╗██████╗ 
  ██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗████╗  ██║██║   ██║██╔══██╗
  ██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║██╔██╗ ██║██║   ██║██████╔╝
@@ -152,26 +152,30 @@ sleep 2s
 echo -e "
 #######################################################################
 ###
-###       YOU NEED TO ENTER YOUR PASSWORD FOR THE NEXT PARTS
+###                   YOU NEED TO ENTER YOUR PASSWORD
 ###
 #######################################################################
 "
 sleep 3s
+
+sudo su
+
+sleep 15s
 echo -e "
                     ### Installing ProtonUp ###"
-timeout 2s sudo pip3 install protonup
+pip3 install protonup
 
-sleep 10s
+sleep 1s
 echo -e "
             ### Setting up Default Download Folder ###"
-timeout 2s protonup -d "~/.steam/root/compatibilitytools.d/"
+protonup -d "~/.steam/root/compatibilitytools.d/"
 
-sleep 10s
+sleep 1s
 echo -e "
            ### Downloading the atest ProtonUp GE file ###"
-timeout 2s protonup
+protonup
 
-timeout 2s echo -e "
+echo -e "
 #######################################################################
 ###
 ###     MAKE SURE THAT THE LATEST PROTON-GE VERSION IS INSTALLED
@@ -185,7 +189,7 @@ protonup -l
 
 sleep 10s
 
-timeout 5s clear && echo -e "
+clear && echo -e "
  ██████╗ ███████╗███╗   ███╗██╗   ██╗      ██╗  ██╗██╗   ██╗███╗   ███╗
 ██╔═══██╗██╔════╝████╗ ████║██║   ██║      ██║ ██╔╝██║   ██║████╗ ████║
 ██║   ██║█████╗  ██╔████╔██║██║   ██║█████╗█████╔╝ ██║   ██║██╔████╔██║
@@ -194,7 +198,7 @@ timeout 5s clear && echo -e "
  ╚══▀▀═╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝       ╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝
 " 
 sleep 2s
-timeout 2s echo -e "
+echo -e "
 #######################################################################
 ###
 ###     STARTING & CHANGING & RESTARTING QEMU-KVM SERVICES
@@ -204,41 +208,43 @@ timeout 2s echo -e "
 sleep 3s
 echo -e "
                     ### Starting ebtables ###"
-sudo systemctl disable ebtables
-sudo systemctl enable ebtables
-sudo systemctl start ebtables
+systemctl disable ebtables
+systemctl enable ebtables
+systemctl start ebtables
 
-sleep 10s
+sleep 2s
 
 echo -e "
                     ### starting libvirtd ###"
-sudo systemctl disable libvirtd.service
-sudo systemctl start libvirtd.service
-sudo systemctl enable libvirtd.service
+systemctl disable libvirtd.service
+systemctl start libvirtd.service
+systemctl enable libvirtd.service
 
-sleep 10s
+sleep 2s
 
 echo -e "
                     ### Starting virtlogd ###"
-sudo systemctl disable virtlogd.socket
-sudo systemctl start virtlogd.socket
-sudo systemctl enable virtlogd.socket
+systemctl disable virtlogd.socket
+systemctl start virtlogd.socket
+systemctl enable virtlogd.socket
 
-sleep 10s
+sleep 2s
 
 echo -e "
                     ### Setting up virsh ###"
-sudo virsh net-autostart default
-sudo virsh net-start default
+virsh net-autostart default
+virsh net-start default
 
-sleep 10s
+sleep 2s
 
 echo -e "
                     ### Configuring libvirtd ###"
-sudo sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
-sudo sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
+sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
+sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
 
-sleep 10s
+sleep 2s
+
+exit
 
 echo -e "
             ### Adding user and group for libvirt ###"
@@ -249,7 +255,7 @@ echo -e "
                     ### Restarting libvirtd ###"
 sudo systemctl restart libvirtd.service
 
-sleep 1s
+sleep 10s
 
 clear && echo -e "
 #######################################################################
@@ -274,7 +280,7 @@ sleep 3s
 timeout 3s systemctl status virtlogd.socket
 sleep 10s
 
-timeout 10s clear && echo -e "
+clear && echo -e "
               ██╗ ██████╗ ███╗   ███╗███╗   ███╗██╗   ██╗
               ██║██╔═══██╗████╗ ████║████╗ ████║██║   ██║
               ██║██║   ██║██╔████╔██║██╔████╔██║██║   ██║
@@ -291,18 +297,21 @@ echo -e "
 ###
 #######################################################################
 "
+sudo su
+sleep 10s
 echo -e "
                     ### Adding IOMMU to GRUB ###"
 sleep 1s
-sudo sed -i s/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
-sleep 10s
+sed -i 's/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
+sleep 15s
 echo -e "
                 ### Generating a new grub.cfg file ###"
-sleep 2s
-sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-sleep 5s
-timeout 10s clear && echo -e "
+sleep 2s
+grub-mkconfig -o /boot/grub/grub.cfg
+
+sleep 15s
+clear && echo -e "
               ███████╗████████╗██╗   ██╗███████╗███████╗
               ██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝
               ███████╗   ██║   ██║   ██║█████╗  █████╗  
@@ -322,7 +331,7 @@ sleep 3s
 echo -e "
             ### Change Parallel Downloads from 5 to 10 ###"
 sleep 1s
-sudo sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
+sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 
 sleep 10s
 echo -e "
@@ -330,8 +339,6 @@ echo -e "
           ### Copying locale.conf from ArchTitus to /etc/ ###"
 sleep 1s
 # sudo cp ~/ArchTitus/etc/locale.conf /etc/
-
-sudo su
 
 cat <<EOF > /etc/locale.conf
     LANGUAGE = "",
@@ -522,7 +529,7 @@ protonup -l
 
 echo -e "\e[31m   
                   ### CHANGE THE SETTINGS IN STEAM ###\e[0m"
-sleep 3s
+sleep 5s
 echo -e "     
               Steam > 
                      Settings > 
