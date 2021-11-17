@@ -61,6 +61,8 @@ PKGS=(
 'mailspring' # E-Mail Client.
 'spotify'
 'obs-studio-browser' # OBS Studio with the Browser Plugin preinstalled.
+'droidcam-obs-plugin'
+'obs-advanced-scene-switcher'
 'opencl-amd'
 'protonup-qt'
 'heroic-games-launcher-bin'
