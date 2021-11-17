@@ -1,8 +1,9 @@
-sleep 3s
-echo -e "\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
+echo -e "
+
+\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
 
     
-sleep 40s
+sleep 10s
 clear && echo -e "      
       
                     Starting in 3"
@@ -39,9 +40,9 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 5s
 
-echo -e "                                                          
+clear && echo -e "                                                          
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
        ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
        ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
@@ -57,19 +58,18 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 2s
 echo -e "
                 ### REMOVE FOLDER & CREATE USER ###
     ### YOU NEED TO GO INTO THE FILE AND SWITCH THE NAME OUT ###"
-sudo su
-umount /.snapshots/
+sudo su 
 rm -rf /.snapshots/
 
 # Create a root configuration
 snapper -c root create-config /
 
 # Change the config file
-ALLOW_USERS="querzion"
+sed -i 's/^ALLOW_USERS=""/ALLOW_USERS="querzion"/' /etc/snapper/configs/root
 
 # Change querzion to your username!
 sed -i 's/^TIMELINE_MIN_AGE="1800"/TIMELINE_MIN_AGE="1800"/' /etc/snapper/configs/root
@@ -100,7 +100,80 @@ snapper -c root list
 clear && echo -e "
 
 \e[31m              REBOOTING IN 15 SECONDS\e[0m"
-sleep 15
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 14 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 13 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 12 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 11 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 10 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 09 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 08 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 07 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 06 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 05 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 04 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 03 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 02 SECONDS\e[0m"
+sleep 1
+
+clear && echo -e "
+
+\e[31m              REBOOTING IN 01 SECONDS\e[0m"
+sleep 1
+clear && echo -e "
+
+\e[31m              REBOOTING IN 00 SECONDS\e[0m"
 
 reboot
 
