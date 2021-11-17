@@ -63,6 +63,7 @@ PKGS=(
 'obs-studio-browser' # OBS Studio with the Browser Plugin preinstalled.
 'opencl-amd'
 'protonup-qt'
+'heroic-games-launcher-bin'
 )
 
 for PKG in "${PKGS[@]}"; do
