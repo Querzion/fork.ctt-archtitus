@@ -2,7 +2,7 @@ sleep 3s
 echo -e "\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
 
     
-sleep 40s
+sleep 10s
 clear && echo -e "      
       
                     Starting in 3"
@@ -39,9 +39,9 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 5s
 
-echo -e "                                                          
+clear && echo -e "                                                          
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
        ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
        ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
@@ -61,9 +61,8 @@ sleep 15s
 echo -e "
                 ### REMOVE FOLDER & CREATE USER ###
     ### YOU NEED TO GO INTO THE FILE AND SWITCH THE NAME OUT ###"
-sudo su
-umount /.snapshots/
-rm -rf /.snapshots/
+sudo su && timeout 3s umount /.snapshots/
+timeout 3s rm -rf /.snapshots/
 
 # Create a root configuration
 snapper -c root create-config /
