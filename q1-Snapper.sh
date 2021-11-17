@@ -57,12 +57,12 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 2s
 echo -e "
                 ### REMOVE FOLDER & CREATE USER ###
     ### YOU NEED TO GO INTO THE FILE AND SWITCH THE NAME OUT ###"
-sudo su && timeout 3s umount /.snapshots/
-timeout 3s rm -rf /.snapshots/
+sudo su 
+rm -rf /.snapshots/
 
 # Create a root configuration
 snapper -c root create-config /
