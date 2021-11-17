@@ -68,7 +68,7 @@ rm -rf /.snapshots/
 snapper -c root create-config /
 
 # Change the config file
-ALLOW_USERS="querzion"
+sed -i 's/^ALLOW_USERS=""/ALLOW_USERS="querzion"/' /etc/snapper/configs/root
 
 # Change querzion to your username!
 sed -i 's/^TIMELINE_MIN_AGE="1800"/TIMELINE_MIN_AGE="1800"/' /etc/snapper/configs/root
