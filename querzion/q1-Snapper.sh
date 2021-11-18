@@ -1,27 +1,8 @@
-echo -e "
-
-\e[31m                   ABORT SCRIPT WITH CTRL + C\e[0m"       
-
-    
-sleep 10s
-clear && echo -e "      
-      
-                    Starting in 3"
-sleep 1s
-clear && echo -e "      
-      
-                    Starting in 2"
-sleep 1s
-clear && echo -e "      
-      
-                    Starting in 1"
-sleep 1s
-
-clear && echo -e "
-THIS SCRIPT WAS CREATED BY..."
+echo -e "\e[33m
+THIS SCRIPT WAS CREATED BY...\e[0m"
 
 sleep 2s
-echo -e "
+echo -e "\e[33m
 
 
    ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
@@ -30,23 +11,78 @@ echo -e "
   ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
   ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
    ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-"
+\e[0m"
 sleep 1s
-echo -e "                                  aka SLISK LINDQVIST"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###                   WELCOME TO MY POST SCRIPT! 
-###             FOR THE FINISHING TOUCH OF ARCHTITUS
-###
-###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m
-### 
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT!\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
 #######################################################################
-"
-sleep 5s
+\e[0m"
+sleep 3s
 
-clear && echo -e "
+echo -e "\e[32m
+
+
+        THIS SCRIPT WILL MAKE SOME DETREMENTAL CHANGES. 
+        SO OPEN IT IN YOUR FAVORITE TEXT EDITOR, AND
+        CHANGE THE SPECIFIC LINES.
+
+        \e[31mSEARCH FOR THESE ROWS!\e[0m\e[32m
+        CHANGE QUERZION TO YOUR USERNAME.
+        AROUND LINE 453 \e[37mALLOW_USER='"querzion"'\e[0m\e[32m 
+        ALSO CHANGE THE SNAPSHOT AMOUNTS.
+        AROUND LINE 490
+        COMMENT THE MOUNTING WITH A SHEBANG '#'.
+        AROUND LINE 588
+
+        IF YOU WANT TO MOUNT OTHER DRIVES PERMANENTLY, A
+        KONSOLE WILL OPEN WITH THE TEXT OF HOW TO MOUNT WITH
+        READ, WRITE & EXECUTE RIGHTS ETC. GPARTED AND 
+        NANO WILL ALSO OPEN WITH TO CHANGE FSTAB. LOOK FOR 
+        THE UUID AND USE THAT, MOUNTING POINT ETC. IF YOU
+        DO NOT WANT TO MOUNT ANYTHING, JUST EXIT THE SESSION.
+        AS SOON AS NANO IS CLOSED WITH \e[31m'CTRL + X'\e[0m & Y & ENTER.
+        A REBOOT PROTOCOL WILL START. 
+
+        ABORT SCRIPT WITH \e[31m'CTRL + C'\e[0m, OR CLOSE THE TERMINAL.\e[0m" 
+sleep 5s
+echo -e "
+
+        You have 1 minute to close the script or keep on."      
+
+    
+clear && echo -e "\e[3m      
+      
+                    Starting in 7\e[0m"
+clear && echo -e "\e[30m      
+      
+                    Starting in 6\e[0m"
+clear && echo -e "\e[30m      
+      
+                    Starting in 5\e[0m"
+clear && echo -e "\e[30m      
+      
+                    Starting in 4\e[0m"
+clear && echo -e "\e[30m      
+      
+                    Starting in 3\e[0m"
+sleep 1s
+clear && echo -e "\e[30m      
+      
+                    Starting in 2\e[0m"
+sleep 1s
+clear && echo -e "\e[30m      
+      
+                    Starting in 1\e[0m"
+sleep 3s
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -55,25 +91,46 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
+
+
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
+
+
+       ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
+       ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+       ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
+       ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
+       ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
+       ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###              NEED TO SET IT UP AND MAKE A SNAPSHOT
-### 
+###                                                                 ###
+###              \e[37mNEED TO SET IT UP AND MAKE A SNAPSHOT\e[0m\e[30m              ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 sleep 2s
-echo -e "
+echo -e "\e[36m
                 ### REMOVE FOLDER & CREATE USER ###
     ### YOU NEED TO GO INTO THE FILE AND SWITCH THE NAME OUT ###
        ### YOU WILL BE PROMPTED TO INPUT YOUR PASSWORD... ###
-                 ### MULTIPLE TIMES IN A ROW ###"
+                 ### MULTIPLE TIMES IN A ROW ###\e[0m
+                 
+        "
 
 sleep 5s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -82,41 +139,50 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###                     SETTING UP THE BASE
-###
-###             YOU NEED TO ENTER YOUR PASSWORD HERE
-### 
+###                                                                 ###
+###                     \e[37mSETTING UP THE BASE\e[0m\e[30m                         ###
+###                                                                 ###
+###             \e[36mYOU NEED TO ENTER YOUR PASSWORD HERE\e[0m\e[30m                ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 sleep 1s
 
 # COMMENTS THIS SECTION IF YOU ARE NOT QUERZION
 # You do that with a #
-echo -e "       
-        Removing /.snapshots/"
+echo -e "\e[32m       
+        Removing /.snapshots/\e[0m"
 rm -rf /.snapshots/
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 sleep 1s
 
 # COMMENTS THIS SECTION IF YOU ARE NOT QUERZION
 # You do that with a #
-echo -e "       
-        Creating a root configuration for snapper."
+echo -e "\e[32m       
+        Creating a root configuration for snapper.\e[0m"
 sudo snapper -c root create-config /
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 5s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -125,24 +191,24 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        10"
+echo -e "\e[31m       
+        10\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -151,24 +217,24 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m        
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        09"
+echo -e "\e[31m       
+        09\e[0m"
 sleep 1s
 
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -177,23 +243,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        08"
+echo -e "\e[31m       
+        08\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -202,24 +268,24 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        07"
+echo -e "\e[31m       
+        07\e[0m"
 sleep 1s
 
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -228,24 +294,24 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT       
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        06"
+echo -e "\e[31m       
+        06\e[0m"
 sleep 1s
 
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -254,23 +320,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m      
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        05"
+echo -e "\e[31m       
+        05\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -279,23 +345,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        04"
+echo -e "\e[31m       
+        04\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -304,23 +370,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        03"
+echo -e "\e[31m       
+        03\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -329,23 +395,24 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        02"
+echo -e "\e[31m       
+        02\e[0m"
 sleep 1s
+sudo nano /etc/fstab
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -354,23 +421,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT        
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        01"
+echo -e "\e[31m       
+        01\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -379,23 +446,23 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###              IF YOU ARE NOT QUERZION; EDIT THE SCRIPT      
-### 
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        CONTINUING"
+echo -e "\e[32m       
+        CONTINUING\e[0m"
 sleep 1s
 
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -404,30 +471,39 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###        CHANGEING THE CONFIG FILE; TO ALLOW_USER querzion. 
-###       THIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.
-###                   \e[31mABORT SCRIPT WITH CTRL + C NOW\e[0m       
-###            IF YOU ARE NOT QUERZION; EDIT THE SCRIPT
-###
-###             YOU NEED TO ENTER YOUR PASSWORD HERE
-###
+###                                                                 ###
+###        \e[37mCHANGEING THE CONFIG FILE; TO ALLOW_USER querzion.\e[0m\e[30m       ###
+###       \e[37mTHIS IS BY DEFAULT, AND CAN BE CHANGED IN THIS SCRIPT.\e[0m\e[30m    ###
+###                   \e[37mABORT SCRIPT WITH CTRL + C NOW\e[0m\e[30m                ###
+###              \e[37mIF YOU ARE NOT QUERZION; EDIT THE SCRIPT\e[0m\e[30m           ###
+###                                                                 ###
+###             \e[32mYOU NEED TO ENTER YOUR PASSWORD HERE\e[0m\e[30m                ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
-echo -e "       
-        Changeing ALLOW_USERS to allow querzion to use SNAPPER."
+sleep 3s
+echo -e "\e[32m       
+        Changeing ALLOW_USERS to allow querzion to use SNAPPER.\e[0m"
 # CHANGE THE CONFIG FILE HERE 
 sudo sed -i 's/^ALLOW_USERS=""/ALLOW_USERS="querzion"/' /etc/snapper/configs/root
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 3s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -436,71 +512,84 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###           SETTING UP THE SNAPPER TIMELINE FALLBACKS
-###               YOU CAN CHANGE THIS IN THE SCRIPT
-###
-###       YOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES
-### 
+###                                                                 ###
+###           \e[37mSETTING UP THE SNAPPER TIMELINE FALLBACKS\e[0m\e[30m             ###
+###               \e[37mYOU CAN CHANGE THIS IN THE SCRIPT\e[0m\e[30m                 ###
+###                                                                 ###
+###       \e[32mYOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES\e[0m\e[30m       ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 
 sleep 2s
-echo -e "       
-        Timeline Minimum Age - 1800; Untouched"
+echo -e "\e[32m       
+        Timeline Minimum Age - 1800; Untouched\e[0m"
 sudo sed -i 's/^TIMELINE_MIN_AGE="1800"/TIMELINE_MIN_AGE="1800"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
         
 sleep 1s
-echo -e "       
-        Timeline Limit Hourly. Backups; 10 >> 7"
-sudo sed -i 's/^TIMELINE_LIMIT_HOURLY="10"/TIMELINE_LIMIT_HOURLY="5"/' /etc/snapper/configs/root
+echo -e "\e[32m       
+        Timeline Limit Hourly. Backups; 10 >> 1\e[0m"
+sudo sed -i 's/^TIMELINE_LIMIT_HOURLY="10"/TIMELINE_LIMIT_HOURLY="1"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
         
 sleep 1s
-echo -e "       
-        Timeline Limit Daily. Backups; 10 >> 8"
-sudo sed -i 's/^TIMELINE_LIMIT_DAILY="10"/TIMELINE_LIMIT_DAILY="8"/' /etc/snapper/configs/root
+echo -e "\e[32m       
+        Timeline Limit Daily. Backups; 10 >> 2\e[0m"
+sudo sed -i 's/^TIMELINE_LIMIT_DAILY="10"/TIMELINE_LIMIT_DAILY="2"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s
-echo -e "       
-        Timeline Limit Weekly. Backups; 0 >> 10"
-sudo sed -i 's/^TIMELINE_LIMIT_WEEKLY="0"/TIMELINE_LIMIT_WEEKLY="10"/' /etc/snapper/configs/root
+echo -e "\e[32m       
+        Timeline Limit Weekly. Backups; 0 >> 1\e[0m"
+sudo sed -i 's/^TIMELINE_LIMIT_WEEKLY="0"/TIMELINE_LIMIT_WEEKLY="1"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s
-echo -e "       
-        Timeline Limit Monthly. Backups; 10 >> 7"
-sudo sed -i 's/^TIMELINE_LIMIT_MONTHLY="10"/TIMELINE_LIMIT_MONTHLY="7"/' /etc/snapper/configs/root
+echo -e "\e[32m       
+        Timeline Limit Monthly. Backups; 10 >> 4\e[0m"
+sudo sed -i 's/^TIMELINE_LIMIT_MONTHLY="10"/TIMELINE_LIMIT_MONTHLY="2"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s
-echo -e "       
-        Timeline Limit Yearly. Backups; 10 >> 0"
+echo -e "\e[32m       
+        Timeline Limit Yearly. Backups; 10 >> 0\e[0m"
 sudo sed -i 's/^TIMELINE_LIMIT_YEARLY="10"/TIMELINE_LIMIT_YEARLY="0"/' /etc/snapper/configs/root
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 
 sleep 5s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -509,36 +598,56 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-Sleep 1s
-echo -e "
+\e[0m"
+sleep 1s
+echo -e "\e[30m
 #######################################################################
-###
-###            CREATING AND SETTING FOLDER PERMISSIONS
-###
-###       YOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES
-### 
+###                                                                 ###    
+###            \e[37mCREATING AND SETTING FOLDER PERMISSIONS\e[0m\e[30m              ###
+###                                                                 ###
+###       \e[32mYOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES\e[0m\e[30m      ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 sleep 3s
-echo -e "       
-        Create Folder /.snapshots/"
+echo -e "\e[32m       
+        Create Folder /.snapshots/\e[0m"
 sudo mkdir  /.snapshots/
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 sleep 1
+echo -e "\e[31m       
+        Mounting /dev/sdc1 to /.snapshots/ folder.
+        Change the drive in the script.\e[0m"
+udisksctl mount -b /dev/sdc1 /.snapshots/
+sleep 3s
+echo -e "\e[32m
+         Done.
+         \e[0m"
+sleep 1s
 
-echo -e "       
-        Change Permissions for the Snapshots Directory"
+sleep 1s
+
+echo -e "\e[32m       
+        Change Permissions for the Snapshots Directory.\e[0m"
 sudo chmod a+rx /.snapshots/
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 5s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -547,74 +656,75 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
-###
-###                ENABELING AND STARTING SERVICES
-###
-###       YOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES
-### 
+###                                                                 ###
+###                \e[37mENABELING AND STARTING SERVICES\e[0m\e[30m                  ###
+###                                                                 ###
+###       \e[32mYOU NEED TO ENTER YOUR PASSWORD HERE MULTIPLE TIMES\e[0m\e[30m       ###
+###                                                                 ###
 #######################################################################
-"
+\e[0m"
 sleep 3s
 
-echo -e "       
-        Enabling Snapper Timeline Timer."
+echo -e "\e[32m       
+        Enabling Snapper Timeline Timer.\e[0m"
 sudo systemctl enable snapper-timeline.timer
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s
 
-echo -e "       
-        Starting Snapper Timeline Timer."
+echo -e "\e[32m       
+        Starting Snapper Timeline Timer.\e[0m"
 sudo systemctl start snapper-timeline.timer
 sleep 3s
-echo -e "       
-        Is It Done? We Will See in the Next Section."
+echo -e "\e[32m       
+        Is It Done? We Will See in the Next Section.\e[0m"
         
 sleep 1s
 
-echo -e "       
-        Enabling Snapper Cleanup Timer."        
+echo -e "\e[32m       
+        Enabling Snapper Cleanup Timer.\e[0m"        
 sudo systemctl enable snapper-cleanup.timer
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s
 
-echo -e "       
-        Starting Snapper Cleanup Timer"
+echo -e "\e[32m       
+        Starting Snapper Cleanup Timer\e[0m"
 sudo systemctl start snapper-cleanup.timer
 sleep 3s
-echo -e "       
-        Is It Done? We Will See in the Next Section."
-
+echo -e "\e[32m       
+        Is It Done? We Will See in the Next Section.\e[0m"
 sleep 1s
 
-echo -e "       
-        Enabling Grub-BTRFS.path."
+echo -e "\e[32m       
+        Enabling Grub-BTRFS.path.\e[0m"
 sudo systemctl enable grub-btrfs.path
 sleep 3s
-echo -e "       
-        Is It Done? We Will See in the Next Section."
+echo -e "\e[32m       
+        Is It Done? We Will See in the Next Section.\e[0m"
 
 sleep 1s
 
-echo -e "       
-        Starting Grub-BTRFS.path."
+echo -e "\e[32m       
+        Starting Grub-BTRFS.path.\e[0m"
 sudo systemctl start grub-btrfs.path
 sleep 3s
-echo -e "       
-        Is It Done? We Will See in the Next Section."
+echo -e "\e[32m       
+        Is It Done? We Will See in the Next Section.\e[0m"
 
 sleep 5s
 
-clear && echo -e "
+clear && echo -e "\e[32m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗
@@ -623,63 +733,70 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
 ###
 ###                STATUS CHECKING THE SERVICES
 ###
 #######################################################################
-"
+\e[0m"
 
 sleep 3s
-echo -e "
-        \e[32mThe Snapper Timeline Timer. Is it up?\e[0m
-        "
+echo -e "\e[32m
+        The Snapper Timeline Timer. Is it up?
+        \e[0m"
         sleep 2s
         systemctl status snapper-timeline.timer
 
 sleep 5s
-echo -e "
-        \e[32mThe Snapper Cleanup Timer. Is it up?\e[0m
-        "
+echo -e "\e[32m
+        The Snapper Cleanup Timer. Is it up?
+        \e[0m"
         sleep 2s
         systemctl status snapper-cleanup.timer
 
 sleep 5s
-echo -e "
-        \e[32mThe Grub BtrFS Path. Is it up?\e[0m
-        "
+echo -e "\e[32m
+        The Grub BtrFS Path. Is it up?
+        \e[0m"
         sleep 2s
         systemctl status grub-btrfs.path
 
 sleep 3s
-echo -e "
+echo -e "\e[32m
 
 
 
-        \e[32mIf the Services Aren't Up and Running...\e[0m
-        \e[32mYou Need at Least the Two First Active.\e[0m
-        \e[32mIF They Aren't, that could be a problem.\e[0m
-        "
+        If the Services Aren't Up and Running...
+        You Need at Least the Two First Active.
+        IF They Aren't, that could be a problem.
+        \e[0m"
 
-sleep 10s
-echo -e "
+sleep 5s
+echo -e "\e[32m
         DO NOT CANCEL THE SCIRPT IF GRUB BTRFS;
         IS THE ONLY SERVICE NOT ACTIVE ...
         OTHERWISE GO AHEAD! SOMETHING IS WRONG.
-        \e[31mCANCEL THE SCRIPT - CTRL + C\e[0m
-        "
+        \e[0m\e[31mCANCEL THE SCRIPT - CTRL + C
+        \e[0m"
 
-sleep 5s
-echo -e "
-        \e[32mSnapshot Creation in 30 seconds.\e[0m
-        "
+sleep 3s
+echo -e "\e[32m
+        Snapshot Creation in 15 seconds.
+        \e[0m"
 
-sleep 30s
+sleep 15s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -688,9 +805,9 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
 ###
 ###                CREATING THE VERY FIRST SNAPSHOT
@@ -698,33 +815,41 @@ echo -e "
 ###              YOU NEED TO ENTER YOUR PASSWORD HERE
 ### 
 #######################################################################
-"
+\e[0m"
 
 sleep 3s
-echo -e "       
-        Creating Snapshot; AfterInstallBeforeReboot."
+echo -e "\e[32m       
+        Creating Snapshot; AfterInstallBeforeReboot.\e[0m"
 sudo snapper -c root create -c timeline --description After-Install
 sleep 3s
-echo -e "       
-        Done!"
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 3s
-echo -e "       
+echo -e "\e[32m       
         
-        \e[32mNext is to Display the Snapshots List.\e[0m 
-        "
+        Next is to Display the Snapshots List. 
+        \e[0m"
 sleep 7s
 snapper -c root list
 sleep 3s
-echo -e "       
+echo -e "\e[32m       
                
-        \e[32mThis is Your Snapshots List.\e[0m 
-        "
+        This is Your Snapshots List. 
+        \e[0m"
         
 
 sleep 15s
 
-clear && echo -e "
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+#######################################################################
+
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -733,15 +858,15 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
+\e[0m"
 sleep 1s
-echo -e "
+echo -e "\e[30m
 #######################################################################
 ###
-###             \e[32mNEXT UP IS A REBOOT IN ORDER TO FINISH UP\e[0m
+###             NEXT UP IS A REBOOT IN ORDER TO FINISH UP
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 ######################## TIMER STARTS HERE ############################
@@ -749,7 +874,7 @@ echo -e "
 sleep 9s
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -758,18 +883,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
-###
-###                 REBOOTING IN  \e[31m15\e[0m SECONDS
+###                                                                 ###
+###                 REBOOTING IN  15 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -778,18 +903,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m14\e[0m SECONDS
+###                 REBOOTING IN  14 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -798,18 +923,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m13\e[0m SECONDS
+###                 REBOOTING IN  13 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -818,18 +943,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m12\e[0m SECONDS
+###                 REBOOTING IN  12 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -838,18 +963,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m11\e[0m SECONDS
+###                 REBOOTING IN  11 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -858,18 +983,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m10\e[0m SECONDS
+###                 REBOOTING IN  10 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -878,18 +1003,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m09\e[0m SECONDS
+###                 REBOOTING IN  09 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -898,18 +1023,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m08\e[0m SECONDS
+###                 REBOOTING IN  08 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -918,18 +1043,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m07\e[0m SECONDS
+###                 REBOOTING IN  07 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -938,18 +1063,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m06\e[0m SECONDS
+###                 REBOOTING IN  06 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -958,18 +1083,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m05\e[0m SECONDS
+###                 REBOOTING IN  05 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -978,18 +1103,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m04\e[0m SECONDS
+###                 REBOOTING IN  04 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -998,18 +1123,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m03\e[0m SECONDS
+###                 REBOOTING IN  03 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -1018,18 +1143,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m02\e[0m SECONDS
+###                 REBOOTING IN  02 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -1038,18 +1163,18 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                 REBOOTING IN  \e[31m01\e[0m SECONDS
+###                 REBOOTING IN  01 SECONDS
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 1s
-clear && echo -e "
+clear && echo -e "\e[35m
 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
@@ -1058,14 +1183,14 @@ clear && echo -e "
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
-"
-echo -e "
+\e[0m"
+echo -e "\e[30m
 #######################################################################
 ###
-###                          \e[32mREBOOTING NOW\e[0m 
+###                          REBOOTING NOW 
 ### 
 #######################################################################
-"
+\e[0m"
 
 
 sleep 3s
