@@ -277,6 +277,17 @@ sudo systemctl start ebtables
 echo -e "
          \e[32mDone.\e[0m
          "
+sleep 2s
+echo -e "
+         \e[32mChecking if ebtables is actually started.\e[0m
+
+         "
+sudo systemctl status ebtables
+sleep 1s
+echo -e "
+         \e[32mDone.\e[0m
+         "
+
 
 sleep 2s
 echo -e "
@@ -284,6 +295,16 @@ echo -e "
          "
 sudo systemctl enable libvirtd.service
 sudo systemctl start libvirtd.service
+echo -e "
+         \e[32mDone.\e[0m
+         "
+sleep 2s
+echo -e "
+         \e[32mChecking if libvirtd is actually started.\e[0m
+
+         "
+sudo systemctl status libvirtd.service
+sleep 1s
 echo -e "
          \e[32mDone.\e[0m
          "
@@ -297,6 +318,19 @@ echo -e "
          \e[32mDone.\e[0m
          "
 sleep 2s
+echo -e "
+         \e[32mChecking if virtlogd is actually started.\e[0m
+
+         "
+sudo systemctl status virtlogd.socket
+sleep 1s
+echo -e "
+         \e[32mDone.\e[0m
+         "
+
+
+
+
 echo -e "
          \e[32mSetting up net device for QEMU\e[0m
          "
@@ -312,14 +346,14 @@ echo -e "
          \e[32mConfiguring libvirtd.conf\e[0m
          "
 sudo sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
+sleep 5s
 sudo sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
+sleep 5s
 echo -e "
          \e[32mDone.\e[0m
          "
 
 sleep 2s
-
-exit
 
 echo -e "
          \e[32mAdding User and Group for libvirt.\e[0m
@@ -479,66 +513,55 @@ sleep 1s
 echo -e "
          \e[32mDone.\e[0m
          "
+
 sleep 3s
 echo -e "
          \e[32mCreating a locale.conf file.\e[0m
          "
 
 sleep 1s
-# sudo cp ~/ArchTitus/etc/locale.conf /etc/
+sudo cp ~/ArchTitus/etc/locale.conf /etc/
+sleep 1s
+echo -e "
+         \e[32mDone.\e[0m
+         "
+sleep 1s
+echo -e "
+         \e[32mGenerating a New Locale.gen file.\e[0m
+         "
+locale-gen
+echo -e "
+         \e[32mDone.\e[0m
+         "
+sleep 1s
+echo -e "
+         \e[32mChecking the Locale.conf file.\e[0m
+         "
+locale
+echo -e "
+         \e[32mDone.\e[0m
+         "
+sleep 3s
 
-cat <<EOF > /etc/locale.conf
-    LANGUAGE = "",
-        LANG = "en_US.UTF-8",
-        LC_ADDRESS = "en_US.UTF-8",
-        LC_NAME = "en_US.UTF-8",
-        LC_MONETARY = "sv_SE.UTF-8",
-        LC_PAPER = "en_US.UTF-8",
-        LC_IDENTIFICATION = "en_US.UTF-8",
-        LC_TELEPHONE = "en_US.UTF-8",
-        LC_MESSAGES = "en_US.UTF-8",
-        LC_MEASUREMENT = "sv_SE.UTF-8",
-        LC_CTYPE = "en_US.UTF-8",
-        LC_TIME = "sv_SE.UTF-8",
-        LC_COLLATE = "sv_SE.UTF-8",
-        LC_NUMERIC = "sv_SE.UTF-8",
-        LC_ALL = ""
+echo -e "
+         \e[31mCreating a KEYMAP for SV_DVORAK in vconsole.conf\e[0m
+         "
+sleep 2s
+
+cat <<EOF > /etc/vconsole.conf
+KEYMAP=dvorak-sv-a1
 EOF
 echo -e "
          \e[32mDone.\e[0m
          "
 sleep 1s
 echo -e "
-         Generating the Locale file."
-locale-gen
-echo -e "
-         Done."
-sleep 1s
-echo -e "
-         Check the Locale.conf"
-locale
-echo -e "
-         Done."
-sleep 5s
-
-echo -e "
-         Creating a KEYMAP for SV_DVORAK in vconsole.conf"
-
-sleep 5s
-
-cat <<EOF > /etc/vconsole.conf
-KEYMAP=dvorak-sv-a1
-EOF
-echo -e "
-         Done."
-sleep 1s
-echo -e "
-
-         Enabling snapd.
+         \e[32mEnabling Snap.\e[0m
          "
 sudo systemctl enable --now snapd.socket
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1
 
 echo -e "
