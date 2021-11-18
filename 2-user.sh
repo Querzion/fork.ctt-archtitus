@@ -52,6 +52,7 @@ PKGS=(
 'ttf-vista-fonts'
 'zoom'
 'snap-pac'
+'snapd'
 'visual-studio-code-bin'
 'vlc-luajit'
 'vlc-bittorrent'
@@ -70,6 +71,7 @@ PKGS=(
 'mkinitcpio-firmware' # Optional firmware for the default linux kernel to get rid of the annoying 'WARNING: Possibly missing firmware for module:' messages
 #'aic94xx-firmware' # Adaptec SAS 44300, 48300, 58300 Sequencer Firmware for AIC94xx driver
 #'wd719x-firmware' # Driver for Western Digital WD7193, WD7197 and WD7296 SCSI cards
+
 )
 
 for PKG in "${PKGS[@]}"; do

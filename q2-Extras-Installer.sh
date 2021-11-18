@@ -91,7 +91,9 @@ clear && echo -e "
 THIS SCRIPT WAS CREATED BY..."
 
 sleep 2s
-echo -e "                                                          
+echo -e "
+
+
    ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
   ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
   ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
@@ -110,9 +112,12 @@ echo -e "
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 5s
 
 echo -e "
+
+                    \e[32mLETS FIX A LITTLE BIT WITH;\e[0m
+
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗
        ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
        ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
@@ -128,12 +133,29 @@ echo -e "
 ###
 #######################################################################
 "
-sleep 5s
-snapper -c root create -c timeline --description Before-Extras
+sleep 3s
+echo -e "
 
-sleep 30s
+        Creating a New Snapshot."
+snapper -c root create -c timeline --description Pre-Script-Q2
+echo -e "
+
+        Done."
+sleep 1s
+echo -e "
+
+    Checking if Pre-Script-Q2 has been added to the Snapshot List"
+snapper -c root list
+echo -e "
+         Done."
+
+
+sleep 5s
 
 clear && echo -e "
+
+                            \e[32mSTARTING;\e[0m
+
             ███████╗████████╗███████╗ █████╗ ███╗   ███╗
             ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
             ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -141,26 +163,33 @@ clear && echo -e "
             ███████║   ██║   ███████╗██║  ██║██║ ╚═╝ ██║
             ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
 "
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
 ###          WAIT! STEAM WILL START SHORTLY READ THIS!
-###     DO NOT TOUCH THE STEAM WINDOW. TIMER SET  -  5 MIN
+###     DO NOT TOUCH THE STEAM WINDOW. TIMER SET  -  3 MIN
 ###       GO AHEAD AND WAIT FOR IT TO START UP AND UPDATE
 ###                IF YOU HAVE THE TIME - LOG IN
 ###           WHEN YOU ARE DONE, JUST PRESS CTRL + C
 ### 
 #######################################################################
 "
-sleep 15s
+sleep 1s
 echo -e "
             Have to start steam in order to ensure that,
-                protonup will function properly."
-sleep 5s
-timeout 5m steam
+                protonup will function properly.
 
+                "
+sleep 5s
+timeout 3m steam
+echo -e "
+         Temporarily Done."
+sleep 1s
 clear && echo -e "
+
+                    \e[32mLETS INSTALL AND SETUP;\e[0m
+
  ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ███╗   ██╗██╗   ██╗██████╗ 
  ██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗████╗  ██║██║   ██║██╔══██╗
  ██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║██╔██╗ ██║██║   ██║██████╔╝
@@ -169,7 +198,7 @@ clear && echo -e "
  ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝    
 "
 
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
@@ -179,23 +208,37 @@ echo -e "
 "
 sleep 3s
 
-sudo su
 
-sleep 15s
 echo -e "
-                    ### Installing ProtonUp ###"
-pip3 install protonup
-
+         Installing ProtonUp"
+sudo pip3 install protonup
+echo -e "
+         Done."
 sleep 1s
 echo -e "
-            ### Setting up Default Download Folder ###"
+         Setting up Default Download Folder"
 protonup -d "~/.steam/root/compatibilitytools.d/"
-
+echo -e "
+        Done."
 sleep 1s
 echo -e "
-           ### Downloading the atest ProtonUp GE file ###"
+         Downloading the latest ProtonUp GE file."
 protonup
+echo -e "
+         Done."
 
+sleep 5s
+clear && echo -e "
+
+
+ ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ███╗   ██╗██╗   ██╗██████╗
+ ██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗████╗  ██║██║   ██║██╔══██╗
+ ██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║██╔██╗ ██║██║   ██║██████╔╝
+ ██╔═══╝ ██╔══██╗██║   ██║   ██║   ██║   ██║██║╚██╗██║██║   ██║██╔═══╝
+ ██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝██║ ╚████║╚██████╔╝██║
+ ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+"
+sleep 1s
 echo -e "
 #######################################################################
 ###
@@ -205,12 +248,16 @@ echo -e "
 "
 sleep 3s
 echo -e "
-            ### Listing Installed ProtonUp GE Files ###"
+         Listing Installed ProtonUp GE Files."
 protonup -l
-
-sleep 10s
+echo -e "
+         Done."
+sleep 5s
 
 clear && echo -e "
+
+                    \e[32mLETS FIX A LITTLE BIT WITH;\e[0m
+
  ██████╗ ███████╗███╗   ███╗██╗   ██╗      ██╗  ██╗██╗   ██╗███╗   ███╗
 ██╔═══██╗██╔════╝████╗ ████║██║   ██║      ██║ ██╔╝██║   ██║████╗ ████║
 ██║   ██║█████╗  ██╔████╔██║██║   ██║█████╗█████╔╝ ██║   ██║██╔████╔██║
@@ -218,7 +265,7 @@ clear && echo -e "
 ╚██████╔╝███████╗██║ ╚═╝ ██║╚██████╔╝      ██║  ██╗ ╚████╔╝ ██║ ╚═╝ ██║
  ╚══▀▀═╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝       ╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝
 " 
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
@@ -228,57 +275,73 @@ echo -e "
 "
 sleep 3s
 echo -e "
-                    ### Starting ebtables ###"
-systemctl disable ebtables
-systemctl enable ebtables
-systemctl start ebtables
+         Enabling & Starting ebtables"
+sudo systemctl enable ebtables
+sudo systemctl start ebtables
+echo -e "
+         Done."
 
 sleep 2s
 
 echo -e "
-                    ### starting libvirtd ###"
-systemctl disable libvirtd.service
-systemctl start libvirtd.service
-systemctl enable libvirtd.service
+         Enabling & Starting libvirtd"
+sudo systemctl disable libvirtd.service
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+echo -e "
+         Done."
 
 sleep 2s
 
 echo -e "
-                    ### Starting virtlogd ###"
-systemctl disable virtlogd.socket
-systemctl start virtlogd.socket
-systemctl enable virtlogd.socket
+         Enabling & Starting virtlogd"
+sudo systemctl disable virtlogd.socket
+sudo systemctl enable virtlogd.socket
+sudo systemctl start virtlogd.socket
+echo -e "
+         Done."
 
 sleep 2s
 
 echo -e "
-                    ### Setting up virsh ###"
-virsh net-autostart default
-virsh net-start default
+         Setting up virsh"
+sudo virsh net-autostart default
+sudo virsh net-start default
+echo -e "
+         Done."
 
 sleep 2s
 
 echo -e "
-                    ### Configuring libvirtd ###"
-sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
-sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
+         Configuring libvirtd.conf"
+sudo sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
+sudo sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
+echo -e "
+         Done."
 
 sleep 2s
 
 exit
 
 echo -e "
-            ### Adding user and group for libvirt ###"
+         Adding user and group for libvirt"
 sudo usermod -a -G libvirt $(whoami)
 newgrp libvirt
+echo -e "
+         Done."
+
 
 echo -e "
-                    ### Restarting libvirtd ###"
+         Restarting libvirtd"
 sudo systemctl restart libvirtd.service
+echo -e "
+         Done."
 
-sleep 10s
+sleep 5s
 
 clear && echo -e "
+
+
 #######################################################################
 ###
 ###            CHECKING THE QEMU-KVM SERVICE - LIBVIRTD
@@ -287,8 +350,15 @@ clear && echo -e "
 #######################################################################
 "
 sleep 3s
-timeout 3s systemctl status libvirtd.service
-sleep 10s
+echo -e "
+
+        Checking libvirtd Status"
+sleep 1s
+systemctl status libvirtd.service
+echo -e "
+         Done."
+
+sleep 3s
 echo -e "
 #######################################################################
 ###
@@ -298,10 +368,23 @@ echo -e "
 #######################################################################
 "
 sleep 3s
-timeout 3s systemctl status virtlogd.socket
+echo -e "
+
+        Checking virtlogd Status"
+sleep 1s
+systemctl status virtlogd.socket
+echo -e "
+         Done."
+
+echo -e "
+         If they were both Active then this part is done.
+         The next one will start in 10 seconds."
+
 sleep 10s
 
 clear && echo -e "
+
+
               ██╗ ██████╗ ███╗   ███╗███╗   ███╗██╗   ██╗
               ██║██╔═══██╗████╗ ████║████╗ ████║██║   ██║
               ██║██║   ██║██╔████╔██║██╔████╔██║██║   ██║
@@ -309,30 +392,34 @@ clear && echo -e "
               ██║╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║╚██████╔╝
               ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝ ╚═════╝
 "
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
 ###                  AMD GPU PASSTHROUGH ACTIVATION
 ###         IF YOU ARE USING INTEL - CHANGE AMD FROM TO INTEL
+###                  \e[32mCTRL + C TO CANCEL;\e[0m
 ###
 #######################################################################
 "
-sudo su
-sleep 10s
+
+sleep 5s
 echo -e "
                     ### Adding IOMMU to GRUB ###"
 sleep 1s
-sed -i 's/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
+sudo sed -i 's/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
 sleep 15s
 echo -e "
-                ### Generating a new grub.cfg file ###"
-
+         Generating a new grub.cfg file
+         "
 sleep 2s
-grub-mkconfig -o /boot/grub/grub.cfg
-
-sleep 15s
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+echo -e "
+         Done."
+sleep 3s
 clear && echo -e "
+
+
               ███████╗████████╗██╗   ██╗███████╗███████╗
               ██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝
               ███████╗   ██║   ██║   ██║█████╗  █████╗  
@@ -340,7 +427,7 @@ clear && echo -e "
               ███████║   ██║   ╚██████╔╝██║     ██║     
               ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝     
 "
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
@@ -350,25 +437,31 @@ echo -e "
 "
 sleep 3s
 echo -e "
-            ### Change Parallel Downloads from 5 to 10 ###"
+         Change Parallel Downloads from 5 to 10"
 sleep 1s
-sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
+sudo sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
+echo -e "
+         Done."
 
 sleep 2s
 
 echo -e "
-                    ### Installing Starship ###"
+         Installing Starship press y then enter."
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 echo -e "
-                    ### Rebuilding the .bashrc ###
-                       ### ls -al > ls only ###
-                     ### Activating starship ###"
+        Making a backup file of .bashrc
+        "
+mv ~/.bashrc ~/.bashrc.bakup
+sleep 1s
+echo -e "
+        Done."
 
-sleep 3s
+sleep 1s
 
-mv ~/.bashrc ~/.bashrc.bak
-
+echo -e "
+        Creating a new .bashrc file
+        "
 sleep 1s
 
 cat <<EOF > ~/.bashrc
@@ -377,22 +470,37 @@ cat <<EOF > ~/.bashrc
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#[[ $- != *i* ]] && return
 
 # alias ls='ls --color=auto'
 alias ls='exa -al --color=always --group-directories-first'
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 
 # Starship
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 
 EOF
+sleep 1s
+echo -e "
+        Done."
 
 
-sleep 10s
+echo -e "
+        Modifying the .bashrc file"
+
+        sudo sed -i 's/^#[[/[[/' ~/.bashrc
+
+        sudo sed -i 's/^#PS1/PS1/' ~/.bashrc
+
+        sudo sed -i 's/^#eval/eval/' ~/.bashrc
+echo -e "
+         Done."
+
+sleep 3s
 echo -e "
 
           ### Creating a locale.conf file ###"
+
 sleep 1s
 # sudo cp ~/ArchTitus/etc/locale.conf /etc/
 
@@ -413,36 +521,60 @@ cat <<EOF > /etc/locale.conf
         LC_NUMERIC = "sv_SE.UTF-8",
         LC_ALL = ""
 EOF
-
+echo -e "
+         Done."
+sleep 1s
+echo -e "
+         Generating the Locale file."
 locale-gen
+echo -e "
+         Done."
+sleep 1s
+echo -e "
+         Check the Locale.conf"
 locale
-sleep 10s
+echo -e "
+         Done."
+sleep 5s
 
 echo -e "
-     ### Changeing startup keyboard layout from QWERTY to DVORAK ###"
+         Creating a KEYMAP for SV_DVORAK in vconsole.conf"
 
 sleep 5s
 
 cat <<EOF > /etc/vconsole.conf
 KEYMAP=dvorak-sv-a1
 EOF
-
-
+echo -e "
+         Done."
+sleep 1s
 echo -e "
 
-                    ### Install Snap & Snap Store & Wonderwall ###"
-sleep 2s
-
-exit
-sudo yay -S snapd && 1
-
+         Enabling snapd.
+         "
 sudo systemctl enable --now snapd.socket
+echo -e "
+         Done."
+sleep 1
+
+echo -e "
+         Creating a link for snap."
 sudo ln -s /var/lib/snapd/snap /snap
+sleep 1s
+echo -e "
+         Done."
+sleep 1s
 
+echo -e "
+         Installing Snap-Store & Wonderwall"
 snap install snap-store wonderwall
+echo -e "
+         Done."
+
+sleep 5s
+clear && echo -e "
 
 
-timeout 10s clear && echo -e "
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -450,23 +582,25 @@ timeout 10s clear && echo -e "
              ███████║   ██║   ███████╗██║  ██║██║ ╚═╝ ██║
              ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
 "
-sleep 2s
+sleep 1s
 echo -e "                                     AGAIN???!"
-sleep 2s
+sleep 1s
 echo -e "
 #######################################################################
 ###
 ###     MAKE SURE THAT THE LATEST PROTON-GE VERSION IS INSTALLED
-###             DO YOU SEE A PROTON VERSION IN 5 SECONDS?
-###               THEN CHANGE IT IN STEAM IN ABOUT 25s.
+###             DO YOU SEE A PROTON VERSION IN 3 SECONDS?
+###                  THEN CHANGE TO IT IN STEAM NEXT
 ###
 #######################################################################
 "
-sleep 5s
+sleep 3s
 protonup -l
-sleep 15s
+sleep 5s
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -487,9 +621,11 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-              ### Starting Steam for 5 minutes ###\e[0m"
+         Starting Steam for 5 minutes\e[0m"
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -510,9 +646,11 @@ echo -e "
 
 sleep 1s
 echo -e "   
-              ### Starting Steam for 5 minutes ###"
+         Starting Steam for 5 minutes"
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -533,9 +671,11 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-              ### Starting Steam for 5 minutes ###\e[0m"
+         Starting Steam for 5 minutes\e[0m"
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -556,9 +696,11 @@ echo -e "
 
 sleep 1s
 echo -e "   
-              ### Starting Steam for 5 minutes ###"
+        Starting Steam for 5 minutes"
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -579,9 +721,11 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-              ### Starting Steam for 5 minutes ###\e[0m"
+         Starting Steam for 5 minutes\e[0m"
 
 clear && echo -e "
+
+
              ███████╗████████╗███████╗ █████╗ ███╗   ███╗
              ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
              ███████╗   ██║   █████╗  ███████║██╔████╔██║
@@ -599,11 +743,14 @@ echo -e "
 ###
 #######################################################################
 "
+
+echo -e "
+         Latest installed Proton GE Version"
 protonup -l
 
 echo -e "\e[31m   
-                  ### CHANGE THE SETTINGS IN STEAM ###\e[0m"
-sleep 5s
+         CHANGE THE SETTINGS IN STEAM\e[0m"
+sleep 3s
 echo -e "     
               Steam > 
                      Settings > 
@@ -612,7 +759,7 @@ echo -e "
                                            
                                                OK 
 " 
-sleep 15s
+sleep 1s
 echo -e "  
               Steam > 
                     Settings > 
@@ -622,7 +769,7 @@ echo -e "
                                                 
                                                 OK 
 "
-sleep 15s
+sleep 1s
 echo -e "\e[31m   
           ### LOG IN NOW AND ACTIVATE PROTON & VULCAN SHADERS###\e[0m"
 sleep 5s
