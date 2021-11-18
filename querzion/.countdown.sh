@@ -1,3 +1,5 @@
+ 
+ # I DID NOT CREATE THIS SCRIPT, BUT TOMXUE DID AND I JUST EDITED IT A BIT.
  #  https://github.com/tomxue/countdown
  
  #!/bin/bash 
@@ -6,12 +8,14 @@ if [ "$#" -lt "2" ] ; then
 	echo "Incorrect usage ! Example:" 
 	echo './countdown.sh -d  "Jun 10 2011 16:06"' 
 	echo 'or' 
-	echo './countdown.sh -m  90' 
+	echo './countdown.sh -m  90'
 	exit 1 
 fi 
  
 now=`date +%s` 
- 
+
+
+
 if [ "$1" = "-d" ] ; then 
 	until=`date -d "$2" +%s` 
 	sec_rem=`expr $until - $now` 
@@ -53,6 +57,7 @@ while [ $sec_rem -gt 0 ]; do
 	days=`expr $interval % 604800 / 86400` 
 	interval=`expr $interval - $hours` 
 	weeks=`expr $interval / 604800` 
+	
 	echo "----------------------------" 
 	echo "Seconds: " $seconds 
 	echo "Minutes: " $minutes 
@@ -77,6 +82,43 @@ while [ $sec_rem -gt 0 ]; do
 	change=$[$percent - $tmp]
 
 	_R=$[ $col * $percent / 100 ]
+
+	echo -e "\e[35m
+
+       ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
+       ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+       ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
+       ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
+       ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
+       ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+
+		COUNTING DOWN; YOU CAN JUMP OVER THE TIMER.
+	\e[0m"
+
+	echo -e "\e[32m
+
+        THIS SCRIPT WILL MAKE SOME DETREMENTAL CHANGES. SO OPEN 
+        IT IN A TEXT EDITOR, AND CHANGE THE SPECIFIC LINES.
+
+        \e[31mSEARCH FOR THESE ROWS!\e[0m\e[32m
+        CHANGE QUERZION TO YOUR USERNAME.
+        AROUND LINE 453 \e[37mALLOW_USER='"querzion"'\e[0m\e[32m 
+        ALSO CHANGE THE SNAPSHOT AMOUNTS.
+        AROUND LINE 490
+        COMMENT THE MOUNTING WITH A SHEBANG '#'.
+        AROUND LINE 588
+
+        IF YOU WANT TO MOUNT OTHER DRIVES PERMANENTLY, A
+        KONSOLE WILL OPEN WITH THE TEXT OF HOW TO MOUNT WITH
+        READ, WRITE & EXECUTE RIGHTS ETC. GPARTED AND 
+        NANO WILL ALSO OPEN WITH TO CHANGE FSTAB. LOOK FOR 
+        THE UUID AND USE THAT, MOUNTING POINT ETC. IF YOU
+        DO NOT WANT TO MOUNT ANYTHING, JUST EXIT THE SESSION.
+        AS SOON AS NANO IS CLOSED WITH \e[31m'CTRL + X'\e[0m & Y & ENTER.
+        
+		A REBOOT PROTOCOL WILL START. 
+
+        ABORT SCRIPT WITH \e[31m'META + X'\e[0m TO CLOSE TERMINAL.\e[0m" 
 
 	sleep 1
 done

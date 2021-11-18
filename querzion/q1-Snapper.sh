@@ -1,10 +1,8 @@
-echo -e "\e[33m
-THIS SCRIPT WAS CREATED BY...\e[0m"
+clear && echo -e "\e[33m
 
+        THIS SCRIPT WAS CREATED BY...\e[0m"
 sleep 2s
 echo -e "\e[33m
-
-
    ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
   ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
   ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
@@ -18,7 +16,7 @@ sleep 1s
 echo -e "\e[30m
 #######################################################################
 ###                                                                 ###
-###                   \e[37mWELCOME TO MY POST SCRIPT!\e[0m\e[30m                    ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
 ###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
 ###                                                                 ###
 ###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
@@ -27,72 +25,169 @@ echo -e "\e[30m
 \e[0m"
 sleep 3s
 
-echo -e "\e[32m
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"     
+sleep 3s 
 
+clear && echo -e "\e[33m
 
-        THIS SCRIPT WILL MAKE SOME DETREMENTAL CHANGES. 
-        SO OPEN IT IN YOUR FAVORITE TEXT EDITOR, AND
-        CHANGE THE SPECIFIC LINES.
+        THIS SCRIPT WAS CREATED BY...\e[0m"
+echo -e "\e[33m
+   ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+  ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
+  ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
+  ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
+  ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+   ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+\e[0m"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
+#######################################################################
+\e[0m"
 
-        \e[31mSEARCH FOR THESE ROWS!\e[0m\e[32m
-        CHANGE QUERZION TO YOUR USERNAME.
-        AROUND LINE 453 \e[37mALLOW_USER='"querzion"'\e[0m\e[32m 
-        ALSO CHANGE THE SNAPSHOT AMOUNTS.
-        AROUND LINE 490
-        COMMENT THE MOUNTING WITH A SHEBANG '#'.
-        AROUND LINE 588
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"
 
-        IF YOU WANT TO MOUNT OTHER DRIVES PERMANENTLY, A
-        KONSOLE WILL OPEN WITH THE TEXT OF HOW TO MOUNT WITH
-        READ, WRITE & EXECUTE RIGHTS ETC. GPARTED AND 
-        NANO WILL ALSO OPEN WITH TO CHANGE FSTAB. LOOK FOR 
-        THE UUID AND USE THAT, MOUNTING POINT ETC. IF YOU
-        DO NOT WANT TO MOUNT ANYTHING, JUST EXIT THE SESSION.
-        AS SOON AS NANO IS CLOSED WITH \e[31m'CTRL + X'\e[0m & Y & ENTER.
-        A REBOOT PROTOCOL WILL START. 
-
-        ABORT SCRIPT WITH \e[31m'CTRL + C'\e[0m, OR CLOSE THE TERMINAL.\e[0m" 
-sleep 5s
-echo -e "
-
-        You have 1 minute to close the script or keep on."      
-
-    
-clear && echo -e "\e[3m      
-      
-                    Starting in 7\e[0m"
-clear && echo -e "\e[30m      
-      
-                    Starting in 6\e[0m"
-clear && echo -e "\e[30m      
+echo -e "\e[30m      
       
                     Starting in 5\e[0m"
-clear && echo -e "\e[30m      
+sleep 1s
+
+clear && echo -e "\e[33m
+
+        THIS SCRIPT WAS CREATED BY...\e[0m"
+echo -e "\e[33m
+   ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+  ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
+  ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
+  ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
+  ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+   ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+\e[0m"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
+#######################################################################
+\e[0m"
+
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"
+
+echo -e "\e[30m      
       
                     Starting in 4\e[0m"
-clear && echo -e "\e[30m      
+sleep 1s
+
+clear && echo -e "\e[33m
+
+        THIS SCRIPT WAS CREATED BY...\e[0m"
+echo -e "\e[33m
+   ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+  ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
+  ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
+  ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
+  ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+   ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+\e[0m"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
+#######################################################################
+\e[0m"
+
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"
+echo -e "\e[30m      
       
                     Starting in 3\e[0m"
 sleep 1s
-clear && echo -e "\e[30m      
+
+clear && echo -e "\e[33m
+
+        THIS SCRIPT WAS CREATED BY...\e[0m"
+echo -e "\e[33m
+   ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+  ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
+  ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
+  ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
+  ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+   ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+\e[0m"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
+#######################################################################
+\e[0m"
+
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"
+echo -e "\e[30m      
       
                     Starting in 2\e[0m"
 sleep 1s
-clear && echo -e "\e[30m      
-      
-                    Starting in 1\e[0m"
-sleep 3s
-clear && echo -e "\e[35m
 
+clear && echo -e "\e[33m
 
-       ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
-       ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
-       ███████╗██╔██╗ ██║███████║██████╔╝██████╔╝█████╗  ██████╔╝
-       ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
-       ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
-       ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+        THIS SCRIPT WAS CREATED BY...\e[0m"
+echo -e "\e[33m
+   ██████╗ ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+  ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗████╗  ██║
+  ██║   ██║██║   ██║█████╗  ██████╔╝  ███╔╝ ██║██║   ██║██╔██╗ ██║
+  ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗ ███╔╝  ██║██║   ██║██║╚██╗██║
+  ╚██████╔╝╚██████╔╝███████╗██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+   ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+\e[0m"
+echo -e "\e[33m                                              aka SLISK LINDQVIST\e[0m"
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
+###                                                                 ###
+###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###                                                                 ###
+#######################################################################
 \e[0m"
 
+echo -e "\e[34m
+        You have 1 minute to close the script or keep on.
+         \e[0m"
+echo -e "\e[30m      
+      
+                    Starting in 1\e[0m"
+
+cd ~/ArchTitus/querzion/
+./.countdown.sh -m 1
 
 #######################################################################
 #######################################################################
@@ -103,6 +198,7 @@ clear && echo -e "\e[35m
 
 clear && echo -e "\e[35m
 
+              WELCOME TO THE CONFIGURATION SCRIPT FOR; 
 
        ███████╗███╗   ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗ 
        ██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
@@ -110,6 +206,7 @@ clear && echo -e "\e[35m
        ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
        ███████║██║ ╚████║██║  ██║██║     ██║     ███████╗██║  ██║
        ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+                                                
 \e[0m"
 sleep 1s
 echo -e "\e[30m
@@ -125,9 +222,7 @@ echo -e "\e[36m
     ### YOU NEED TO GO INTO THE FILE AND SWITCH THE NAME OUT ###
        ### YOU WILL BE PROMPTED TO INPUT YOUR PASSWORD... ###
                  ### MULTIPLE TIMES IN A ROW ###\e[0m
-                 
         "
-
 sleep 5s
 
 clear && echo -e "\e[35m
