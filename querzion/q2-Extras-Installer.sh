@@ -507,9 +507,10 @@ echo -e "
 sleep 1s
 
 echo -e "
-         \e[32mCreating a New "~/.bashrc".\e[0m
+         \e[32mAdding two lines to "~/.bashrc".\e[0m
          "
-cp ~/ArchTitus/.bashrc ~/
+echo "# Starship Terminal Graphics" >> ~/.bashrc
+echo "eval "$(starship init bash)"" >> ~/.bashrc
 sleep 1s
 echo -e "
          \e[32mDone.\e[0m
@@ -517,11 +518,31 @@ echo -e "
 
 sleep 3s
 echo -e "
-         \e[32mCreating a locale.conf file.\e[0m
+         \e[32mAdding language settings to locale.conf\e[0m
+         English & Swedish Settings. To change them; 
+            sudo nano /etc/locale.conf
          "
-
+sleep 5s
+echo -e "
+         \e[31mStarting Now. Enter your password.\e[0m
+         "
 sleep 1s
-sudo cp ~/ArchTitus/etc/locale.conf /etc/
+sudo echo "LANGUAGE = ""," >> /etc/locale.conf
+sudo echo "       LANG = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_ADDRESS = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_NAME = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_MONETARY = "sv_SE.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_PAPER = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_IDENTIFICATION = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_TELEPHONE = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_MESSAGES = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_MEASUREMENT = "sv_SE.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_CTYPE = "en_US.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_TIME = "sv_SE.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_COLLATE = "sv_SE.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_NUMERIC = "sv_SE.UTF-8"," >> /etc/locale.conf
+sudo echo "       LC_ALL = """ >> /etc/locale.conf
+
 sleep 1s
 echo -e "
          \e[32mDone.\e[0m
