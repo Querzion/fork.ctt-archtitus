@@ -451,8 +451,9 @@ sleep 15s
 echo -e "
          \e[32mGenerating a New GRUB.CFG File.\e[0m
          "
-sleep 2s
+sleep 1s
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+sleep 1s
 echo -e "
          \e[32mDone.\e[0m
          "
