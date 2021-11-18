@@ -566,18 +566,22 @@ echo -e "
 sleep 1
 
 echo -e "
-         Creating a link for snap."
+         \e[32mCreating a link for Snap.\e[0m
+         "
 sudo ln -s /var/lib/snapd/snap /snap
 sleep 1s
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1s
 
 echo -e "
-         Installing Snap-Store & Wonderwall"
+         \e[32mInstalling Snap Store and Wonderwall.\e[0m
+         "
 snap install snap-store wonderwall
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 5s
 clear && echo -e "
@@ -603,6 +607,9 @@ echo -e "
 #######################################################################
 "
 sleep 3s
+echo -e "
+         \e[32mThis is the Proton GE Version you have.\e[0m
+         "
 protonup -l
 sleep 5s
 
@@ -629,7 +636,8 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-         Starting Steam for 5 minutes\e[0m"
+         Starting Steam for 5 minutes\e[0m
+         "
 
 clear && echo -e "
 
@@ -654,7 +662,8 @@ echo -e "
 
 sleep 1s
 echo -e "   
-         Starting Steam for 5 minutes"
+         Starting Steam for 5 minutes
+         "
 
 clear && echo -e "
 
@@ -679,7 +688,8 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-         Starting Steam for 5 minutes\e[0m"
+         Starting Steam for 5 minutes\e[0m
+         "
 
 clear && echo -e "
 
@@ -704,7 +714,8 @@ echo -e "
 
 sleep 1s
 echo -e "   
-        Starting Steam for 5 minutes"
+        Starting Steam for 5 minutes
+        "
 
 clear && echo -e "
 
@@ -729,7 +740,8 @@ echo -e "
 
 sleep 1s
 echo -e "\e[31m   
-         Starting Steam for 5 minutes\e[0m"
+         Starting Steam for 5 minutes\e[0m
+         "
 
 clear && echo -e "
 
@@ -753,7 +765,8 @@ echo -e "
 "
 
 echo -e "
-         Latest installed Proton GE Version"
+         \e[32mThis is the Proton GE Version you have.\e[0m
+         "
 protonup -l
 
 echo -e "\e[31m   
@@ -779,11 +792,17 @@ echo -e "
 "
 sleep 1s
 echo -e "\e[31m   
-          ### LOG IN NOW AND ACTIVATE PROTON & VULCAN SHADERS###\e[0m"
+         LOG IN NOW AND ACTIVATE PROTON & VULCAN SHADERS\e[0m
+         "
 sleep 5s
+echo -e "
+         \e[32mStarting Steam.\e[0m
+         "
 timeout 5m steam
-
-sleep 10s
+echo -e "
+         \e[32mHope You Had the Time Needed To Change, The Settings.\e[0m
+         "
+sleep 5s
 clear && echo -e "
                                                             
       ████████╗██╗  ██╗███████╗    ███████╗███╗   ██╗██████╗ 
