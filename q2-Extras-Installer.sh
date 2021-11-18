@@ -129,7 +129,7 @@ echo -e "
 #######################################################################
 "
 sleep 5s
-snapper -c root create -c timeline --description AfterSnapperReboot
+snapper -c root create -c timeline --description Before-Extras
 
 sleep 30s
 

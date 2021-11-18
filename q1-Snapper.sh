@@ -703,7 +703,7 @@ echo -e "
 sleep 3s
 echo -e "       
         Creating Snapshot; AfterInstallBeforeReboot."
-sudo snapper -c root create -c timeline --description AfterInstallBeforeReboot
+sudo snapper -c root create -c timeline --description After-Install
 sleep 3s
 echo -e "       
         Done!"
