@@ -26,30 +26,6 @@ sleep 1s
 clear && echo -e "
 
 \e[31m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[37m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[31m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[37m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[31m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[37m              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "
-
-\e[31m              WARNING WARNING WARNING WARNING WARNING\e[0m"
 
 sleep 3s
 echo -e "
@@ -135,19 +111,20 @@ echo -e "
 "
 sleep 3s
 echo -e "
-
-        Creating a New Snapshot."
+         \e[32mCreating Snapper Backup Pre-Script-Q2.\e[0m
+         "
 snapper -c root create -c timeline --description Pre-Script-Q2
 echo -e "
-
-        Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1s
 echo -e "
-
-    Checking if Pre-Script-Q2 has been added to the Snapshot List"
+         \e[32mChecking if Pre-Script-Q2 is in Snapper.\e[0m
+         "
 snapper -c root list
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 
 sleep 5s
@@ -184,7 +161,8 @@ echo -e "
 sleep 5s
 timeout 3m steam
 echo -e "
-         Temporarily Done."
+         \e[32mTemporarily Done.\e[0m
+         "
 sleep 1s
 clear && echo -e "
 
@@ -210,22 +188,28 @@ sleep 3s
 
 
 echo -e "
-         Installing ProtonUp"
+         \e[32mInstalling ProtonUp.\e[0m
+         "
 sudo pip3 install protonup
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1s
 echo -e "
-         Setting up Default Download Folder"
+         \e[32mSetting the ProtonUp folder.\e[0m
+         "
 protonup -d "~/.steam/root/compatibilitytools.d/"
 echo -e "
-        Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1s
 echo -e "
-         Downloading the latest ProtonUp GE file."
+         \e[32mDownload the Latest Proton GE Version.\e[0m
+         "
 protonup
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 5s
 clear && echo -e "
@@ -248,10 +232,12 @@ echo -e "
 "
 sleep 3s
 echo -e "
-         Listing Installed ProtonUp GE Files."
+         \e[32mListing Installed Proton GE Files.\e[0m
+         "
 protonup -l
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 5s
 
 clear && echo -e "
@@ -273,69 +259,85 @@ echo -e "
 ###
 #######################################################################
 "
+echo -e "
+         \e[32mInstalling Dependencies, press Y\e[0m
+                  "
+echo "y" | sudo pacman -S ebtables iptables
+
+echo -e "
+         \e[32mDone.\e[0m
+         "
 sleep 3s
 echo -e "
-         Enabling & Starting ebtables"
+         \e[32mInstalling Dependencies, press Y\e[0m
+         Enabling & Starting ebtables
+         "
 sudo systemctl enable ebtables
 sudo systemctl start ebtables
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 2s
-
 echo -e "
-         Enabling & Starting libvirtd"
-sudo systemctl disable libvirtd.service
+         \e[32mEnabling and Starting LibVirtD.\e[0m
+         "
 sudo systemctl enable libvirtd.service
 sudo systemctl start libvirtd.service
 echo -e "
-         Done."
-
+         \e[32mDone.\e[0m
+         "
 sleep 2s
-
 echo -e "
-         Enabling & Starting virtlogd"
-sudo systemctl disable virtlogd.socket
+         \e[32mEnabling and Starting VirtLogD.\e[0m
+         "
 sudo systemctl enable virtlogd.socket
 sudo systemctl start virtlogd.socket
 echo -e "
-         Done."
-
+         \e[32mDone.\e[0m
+         "
 sleep 2s
-
 echo -e "
-         Setting up virsh"
+         \e[32mSetting up net device for QEMU\e[0m
+         "
 sudo virsh net-autostart default
 sudo virsh net-start default
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 2s
 
 echo -e "
-         Configuring libvirtd.conf"
+         \e[32mConfiguring libvirtd.conf\e[0m
+         "
 sudo sed -i 's/^unix_sock_group = ""/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
 sudo sed -i 's/^unix_sock_rw_perms = ""/unix_sock_rw_perms = "0770"/' /etc/libvirt/libvirtd.conf
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 2s
 
 exit
 
 echo -e "
-         Adding user and group for libvirt"
+         \e[32mAdding User and Group for libvirt.\e[0m
+         "
 sudo usermod -a -G libvirt $(whoami)
 newgrp libvirt
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 
 echo -e "
-         Restarting libvirtd"
+         \e[32mRestarting LibVirtD.\e[0m
+         "
 sudo systemctl restart libvirtd.service
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 5s
 
@@ -351,12 +353,13 @@ clear && echo -e "
 "
 sleep 3s
 echo -e "
-
-        Checking libvirtd Status"
+         \e[32mChecking LibVirtD Service Status\e[0m
+         "
 sleep 1s
 systemctl status libvirtd.service
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 3s
 echo -e "
@@ -369,12 +372,13 @@ echo -e "
 "
 sleep 3s
 echo -e "
-
-        Checking virtlogd Status"
+         \e[32mChecking VirtLogD Service Status.\e[0m
+         "
 sleep 1s
 systemctl status virtlogd.socket
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 
 echo -e "
          If they were both Active then this part is done.
@@ -405,17 +409,19 @@ echo -e "
 
 sleep 5s
 echo -e "
-                    ### Adding IOMMU to GRUB ###"
+         \e[32mAdding IOMMU capabilities to Grub.\e[0m
+         "
 sleep 1s
 sudo sed -i 's/^GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLIN_LINUX_DEFAULT="loglevel=3 quiet iommu=1 amd_iommu=on"/' /etc/default/grub
 sleep 15s
 echo -e "
-         Generating a new grub.cfg file
+         \e[32mGenerating a New GRUB.CFG File.\e[0m
          "
 sleep 2s
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 3s
 clear && echo -e "
 
@@ -436,70 +442,47 @@ echo -e "
 #######################################################################
 "
 sleep 3s
-echo -e "
-         Change Parallel Downloads from 5 to 10"
+#echo -e "
+#         \e[32mChangeing ParallelDownleads in Pacman.conf\e[0m
+#         "
 sleep 1s
-sudo sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
-echo -e "
-         Done."
+#sudo sed -i 's/^ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
+#echo -e "
+#         \e[32mDone.\e[0m
+#         "
 
 sleep 2s
-
 echo -e "
-         Installing Starship press y then enter."
+         \e[32mInstalling Starship. Press; Y/y.\e[0m
+         "
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-
 echo -e "
-        Making a backup file of .bashrc
-        "
+         \e[32mDone.\e[0m
+         "
+sleep 1s 
+echo -e "
+         \e[32mMaking a backup of  "~/.bashrc"\e[0m
+         "
 mv ~/.bashrc ~/.bashrc.bakup
 sleep 1s
 echo -e "
-        Done."
+         \e[32mDone.\e[0m
+         "
 
 sleep 1s
 
 echo -e "
-        Creating a new .bashrc file
-        "
-sleep 1s
-
-cat <<EOF > ~/.bashrc
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
-#[[ $- != *i* ]] && return
-
-# alias ls='ls --color=auto'
-alias ls='exa -al --color=always --group-directories-first'
-#PS1='[\u@\h \W]\$ '
-
-# Starship
-#eval "$(starship init bash)"
-
-EOF
+         \e[32mCreating a New "~/.bashrc".\e[0m
+         "
+cp ~/ArchTitus/.bashrc ~/
 sleep 1s
 echo -e "
-        Done."
-
-
-echo -e "
-        Modifying the .bashrc file"
-
-        sudo sed -i 's/^#[[/[[/' ~/.bashrc
-
-        sudo sed -i 's/^#PS1/PS1/' ~/.bashrc
-
-        sudo sed -i 's/^#eval/eval/' ~/.bashrc
-echo -e "
-         Done."
-
+         \e[32mDone.\e[0m
+         "
 sleep 3s
 echo -e "
-
-          ### Creating a locale.conf file ###"
+         \e[32mCreating a locale.conf file.\e[0m
+         "
 
 sleep 1s
 # sudo cp ~/ArchTitus/etc/locale.conf /etc/
@@ -522,7 +505,8 @@ cat <<EOF > /etc/locale.conf
         LC_ALL = ""
 EOF
 echo -e "
-         Done."
+         \e[32mDone.\e[0m
+         "
 sleep 1s
 echo -e "
          Generating the Locale file."
