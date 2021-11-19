@@ -980,7 +980,7 @@ echo -e "\e[30m
 
 sleep 3s
 echo -e "\e[32m       
-        Creating Snapshot; AfterInstallBeforeReboot.\e[0m"
+        Creating Snapshot; After-Install.\e[0m"
 sudo snapper -c root create -c timeline --description After-Install
 sleep 3s
 echo -e "\e[32m
