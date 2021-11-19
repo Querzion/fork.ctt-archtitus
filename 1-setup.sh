@@ -159,7 +159,7 @@ PKGS=(
 'neofetch'
 'networkmanager'
 'notepadqq'
-# 'ntfs-3g' # (https://www.techrepublic.com/article/linux-kernel-5-15-is-now-available-and-it-has-something-special-for-ntfs-users/)
+'ntfs-3g' # (https://www.techrepublic.com/article/linux-kernel-5-15-is-now-available-and-it-has-something-special-for-ntfs-users/)
 'ntp'
 'okular'
 'openssh'

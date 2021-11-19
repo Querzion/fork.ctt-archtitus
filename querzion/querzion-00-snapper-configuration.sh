@@ -1016,6 +1016,33 @@ echo -e "\e[30m
 ###                                                                 ###
 #######################################################################
 \e[0m"       
+sleep 1s 
+
+echo -e "\e[32m
+        Creating a backup directory for a fstab backup.
+        \e[0m"
+sudo mkdir /etc/backup
+echo -e "\e[32m
+        Done.
+        \e[0m"
+sleep 1s
+
+echo -e "\e[32m
+        Creating a backup of fstab into the backup folder.
+        \e[0m"
+sudo cp /etc/fstab /etc/backup/fstab
+echo -e "\e[32m
+        Done.
+        \e[0m"
+sleep 1s
+
+echo -e "\e[32m       
+        Creating Snapshot; Fstab-Backed.\e[0m"
+sudo snapper -c root create -c timeline --description Fstab-Backed
+sleep 3s
+echo -e "\e[32m
+         Done.
+         \e[0m"
 
 sleep 1s 
 echo -e "\e[32m       
@@ -1029,86 +1056,97 @@ sleep 1s
 
 echo -e "\e[32m
         Creating a new file that will be added to ~/Documents/.
-                ... fstab.UUID-Mounting ...
+                ... fstab.UUID-Mounting-Guide ...
         \e[0m"
 sleep 1s
 echo "
 
-#######   /etc/fstab 
+###################################################  /etc/fstab  ####################################################
 #
-#               Mount a swap file in fstab...
+#              ENTER YOUR OWN UUID'S SINCE THESE ARE THE ONE'S I HAVE GENERATED IN FOR THIS REASON
 #
-#       Use the UUID from a partition when you automount through fstab.
-#       UUID's can be found by opening 'gparted' and right-click a partition...
-#       Choose 'Information' and you will get the information that you need.
+#####################################################################################################################
 #
-#       This is how you mount a SWAP partition...
+#                       <FILE SYSTEM><DIR><FILE/PARTITION><MOUNTING OPTIONS><DUMP><PASS>
 #
-#       When you are in your own fstab, do not change what is already there.
+#################################################### SYSTEM DISK ####################################################
 #
-#######
+#
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=e7573650-15de-4a72-97d6-3df66b677e21	/         	btrfs     	rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@	0 0
 
-#       <FILE SYSTEM>                           <DIR>             <PARTITION>     <MOUNTING OPTIONS>                            <DUMP> <PASS>
-
-# /dev/sdc2     LABEL=SWAP
-# ENTER YOUR UUID AND NOT MINE
-UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4       none                    swap            defaults                                0       0                    
+# /dev/nvme0n1p2 LABEL=EFIBOOT
+UUID=198D-5496      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/sdc1     LABEL=SNAPSHOTS
-UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698       /.snapshots/            btrfs           defaults,auto,rw,noatime                0       1
+UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698       /.snapshots/            btrfs           defaults,auto,rw,noatime                0 1
+
+# /dev/sdc2     LABEL=SWAP
+UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4       none                    swap            defaults                                0 0                    
+
+################################################### SIDE-SHOW BOB ####################################################
 
 # /dev/sda1     LABEL=VIDEO 
-# UUID=B0B25B2CB25AF5F6                           ~/Video/Movies/         ntfs            defaults,rw,auto,noatime                0       1
+UUID=B0B25B2CB25AF5F6                           ~/Video/M-S/         ntfs            defaults,rw,auto,noatime                 0 1
 
 # /dev/sdb1     LABEL=SLOW
-UUID=59cfb494-9180-4842-a25b-e028d166a382       ~/Games/Slow/           ext4            defaults,noatime,auto,rw                0       1
+UUID=59cfb494-9180-4842-a25b-e028d166a382       ~/Games/Slow/           ext4            defaults,noatime,auto,rw                0 1
 
 # /dev/nvme1n1p1  LABEL=FAST
-UUID=18379480-32ad-42b4-b251-75571a7ddc20       ~/Games/Fast/           btrfs           defaults,noatime,auto,rw                0       1
+UUID=18379480-32ad-42b4-b251-75571a7ddc20       ~/Games/Fast/           btrfs           defaults,noatime,auto,rw                0 1
 
-" >> .fstab.UUID-Mounting
-
-
+" >> ~/Documents/.fstab.UUID-Mounting-Guide
 echo -e "\e[32m
-        Creating a backup directory for a fstab backup.
-        \e[0m"
-sudo mkdir /etc/backup
-echo -e "\e[32m
-        Done.
-        \e[0m"
-
-sleep 1s
-echo -e "\e[32m
-        Creating a backup of fstab into the backup folder.
-        \e[0m"
-sudo cp /etc/fstab /etc/backup/fstab
-echo -e "\e[32m
-        Done.
-        \e[0m"
-
-sleep 1s
-echo -e "\e[32m
-        Starting Text-Editor (KATE), 
-        This will open the file that was just created.
-        Close it, and open a folder, change to see hidden files...
-        It's a hidden file. Sorry, not Sorry. ;P 
-        \e[0m" 
+         Done. Saved in ~/Documents/ as ...
+         
+        \e[34m.fstab.UUID-Mounting-Guide
+         \e[0m"
 sleep 5s
-kate ~/Documents/.fstab.UUID-Mounting
+
+echo -e "\e[31m
+        Starting kate. This will open the file that 
+        was just created. It will be open till you close it.
+
+        Edit the file to your need. It will be saved as 
+        /etc/fstab in just a little bit. So it's very 
+        important that you know what you are about to do. 
+        \e[0m" 
+sleep 15s
+kate ~/Documents/.fstab.UUID-Mounting-Guide
 echo -e "\e[32m
-        Done. Now open that file again, 
+        Done. 
         \e[0m"
+sleep 1s
 
+echo -e "\e[32m
+        Copying ~/Documents/.fstab.UUID-Mounting over as /etc/fstab.
 
+        \e[31mThis is the last thing before the reboot, so
+        if you don't want to have a headache over fstab now...
+        I suggest that you think over it while the 15 minute 
+        countdown takes over, If you want it to be overwritten...
 
+        Just press CTRL + C when you are in the countdown. 
+        \e[0m"
+sleep 15s
 
+cd ~/ArchTitus/querzion/
+./.countdown.sh -m 15
 
-sleep 2m
+clear && echo -e "\e[32m
+        WRITING OVER /etc/fstab ..... 
+        \e[0m"
+sleep 1s
 
+sudo cp ~/Documents/.fstab.UUID-Mounting-Guide /etc/fstab
 
+echo -e "\e[32m
+        Done. There is a backup fstab file... 
 
+                /etc/backup/fstab
 
-gparted && sudo nano /etc/fstab
+        Good Luck.
+        \e[0m"
 
 #######################################################################
 #######################################################################
