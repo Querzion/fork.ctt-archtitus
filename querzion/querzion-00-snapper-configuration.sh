@@ -1078,7 +1078,7 @@ UUID=e7573650-15de-4a72-97d6-3df66b677e21	/         	btrfs     	rw,relatime,ssd,
 # /dev/nvme0n1p2 LABEL=EFIBOOT
 UUID=198D-5496      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
-# /dev/sdc1     LABEL=SNAPSHOTS
+# /dev/sdc1     LABEL=SNAPS
 UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698       /.snapshots/            btrfs           defaults,auto,rw,noatime                0 1
 
 # /dev/sdc2     LABEL=SWAP
@@ -1087,7 +1087,7 @@ UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4       none                    swap    
 ################################################### SIDE-SHOW BOB ####################################################
 
 # /dev/sda1     LABEL=VIDEO 
-UUID=B0B25B2CB25AF5F6                           ~/Video/M-S/         ntfs            defaults,rw,auto,noatime                 0 1
+UUID=B0B25B2CB25AF5F6                           ~/Video/M-S/            ntfs            defaults,rw,auto,noatime                0 1
 
 # /dev/sdb1     LABEL=SLOW
 UUID=59cfb494-9180-4842-a25b-e028d166a382       ~/Games/Slow/           ext4            defaults,noatime,auto,rw                0 1
