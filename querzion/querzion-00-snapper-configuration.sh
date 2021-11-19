@@ -562,7 +562,6 @@ echo -e "\e[30m
 echo -e "\e[31m      
                     Starting in 02\e[0m"
 sleep 1s
-sudo nano /etc/fstab
 
 clear && echo -e "\e[35m
 
