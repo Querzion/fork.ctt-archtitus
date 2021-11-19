@@ -240,7 +240,7 @@ echo -e "\e[31m
 ####################################################################### COUNTDOWN
 
 echo -e "\e[30m
-                ./.countdown.sh -m 1\e[0m"
+                ./.countdown-snapper.sh -m 1\e[0m"
 sleep 1s
 
 cd ~/ArchTitus/querzion/
