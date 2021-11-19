@@ -1131,7 +1131,7 @@ echo -e "\e[32m
 sleep 15s
 
 cd ~/ArchTitus/querzion/
-./.countdown.sh -m 15
+./.countdown-fstab.sh -m 15
 
 clear && echo -e "\e[32m
         WRITING OVER /etc/fstab ..... 
