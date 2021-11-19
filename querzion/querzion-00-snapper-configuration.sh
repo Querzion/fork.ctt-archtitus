@@ -1,3 +1,19 @@
+#######
+#
+#       CHANGE QUERZION TO YOUR USERNAME. ( \e[37mALLOW_USER='"querzion"'\e[0m )
+#               AROUND LINE 644  
+#               
+#       ALSO CHANGE THE SNAPSHOT AMOUNTS. ( How often and how many you want to have. )
+#               AROUND LINE 680 - 733
+#               
+#       COMMENT THE MOUNTING WITH A SHEBANG '#'. ( udisksctl mount -b /dev/sdc1 /.snapshots/ )
+#               AROUND LINE 777
+#
+#######
+
+
+
+
 clear && echo -e "\e[33m
 
         THIS SCRIPT WAS CREATED BY...\e[0m"
@@ -715,7 +731,6 @@ echo -e "\e[32m
          Done.
          \e[0m"
 
-
 sleep 5s
 
 #######################################################################
@@ -745,6 +760,7 @@ echo -e "\e[30m
 ###                                                                 ###
 #######################################################################
 \e[0m"
+
 sleep 3s
 echo -e "\e[32m       
         Create Folder /.snapshots/\e[0m"
