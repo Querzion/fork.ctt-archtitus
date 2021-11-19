@@ -1,4 +1,4 @@
-#######
+#######         Created by Querzion 2021 - https://github.com/Querzion
 #
 #       CHANGE QUERZION TO YOUR USERNAME. ( \e[37mALLOW_USER='"querzion"'\e[0m )
 #               AROUND LINE 644  
@@ -1018,17 +1018,93 @@ echo -e "\e[30m
 \e[0m"       
 
 sleep 1s 
-echo -e "
-        Copy this text..."
-sleep 1s 
-echo -e "
-        UUID."
+echo -e "\e[32m       
+               
+        Information will now be created. 
+        All in order to add information to the fstab file.
+        \e[31mIf you do not know what you aro doing. 
+        Don't poke and prod with /etc/fstab...  
+        \e[0m"
+sleep 1s
+
+echo -e "\e[32m
+        Creating a new file that will be added to ~/Documents/.
+                ... fstab.UUID-Mounting ...
+        \e[0m"
+sleep 1s
+echo "
+
+#######   /etc/fstab 
+#
+#               Mount a swap file in fstab...
+#
+#       Use the UUID from a partition when you automount through fstab.
+#       UUID's can be found by opening 'gparted' and right-click a partition...
+#       Choose 'Information' and you will get the information that you need.
+#
+#       This is how you mount a SWAP partition...
+#
+#       When you are in your own fstab, do not change what is already there.
+#
+#######
+
+#       <FILE SYSTEM>                           <DIR>             <PARTITION>     <MOUNTING OPTIONS>                            <DUMP> <PASS>
+
+# /dev/sdc2     LABEL=SWAP
+# ENTER YOUR UUID AND NOT MINE
+UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4       none                    swap            defaults                                0       0                    
+
+# /dev/sdc1     LABEL=SNAPSHOTS
+UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698       /.snapshots/            btrfs           defaults,auto,rw,noatime                0       1
+
+# /dev/sda1     LABEL=VIDEO 
+# UUID=B0B25B2CB25AF5F6                           ~/Video/Movies/         ntfs            defaults,rw,auto,noatime                0       1
+
+# /dev/sdb1     LABEL=SLOW
+UUID=59cfb494-9180-4842-a25b-e028d166a382       ~/Games/Slow/           ext4            defaults,noatime,auto,rw                0       1
+
+# /dev/nvme1n1p1  LABEL=FAST
+UUID=18379480-32ad-42b4-b251-75571a7ddc20       ~/Games/Fast/           btrfs           defaults,noatime,auto,rw                0       1
+
+" >> .fstab.UUID-Mounting
+
+
+echo -e "\e[32m
+        Creating a backup directory for a fstab backup.
+        \e[0m"
+sudo mkdir /etc/backup
+echo -e "\e[32m
+        Done.
+        \e[0m"
+
+sleep 1s
+echo -e "\e[32m
+        Creating a backup of fstab into the backup folder.
+        \e[0m"
+sudo cp /etc/fstab /etc/backup/fstab
+echo -e "\e[32m
+        Done.
+        \e[0m"
+
+sleep 1s
+echo -e "\e[32m
+        Starting Text-Editor (KATE), 
+        This will open the file that was just created.
+        Close it, and open a folder, change to see hidden files...
+        It's a hidden file. Sorry, not Sorry. ;P 
+        \e[0m" 
+sleep 5s
+kate ~/Documents/.fstab.UUID-Mounting
+echo -e "\e[32m
+        Done. Now open that file again, 
+        \e[0m"
 
 
 
 
 
-sleep 10s
+sleep 2m
+
 
 
 

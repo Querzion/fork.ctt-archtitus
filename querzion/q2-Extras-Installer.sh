@@ -1,29 +1,33 @@
-#!/usr/bin/env bash
-# Graphics are ANSI Shadow from 
-# https://www.coolgenerator.com/ascii-text-generator
-# https://www.shellhacks.com/bash-colors/
+####### !bash   Created by Querzion 2021 - https://github.com/Querzion
+#
+#       Graphics are ANSI Shadow from 
+#       https://www.coolgenerator.com/ascii-text-generator
+#       https://www.shellhacks.com/bash-colors/
+#
+#######
 
-clear && echo -e "\e[32m
 
-              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "\e[32m
-
-              WARNING WARNING WARNING WARNING WARNING\e[0m"
-sleep 1s
-clear && echo -e "\e[32m
+clear && echo -e "\e[37m
 
               WARNING WARNING WARNING WARNING WARNING\e[0m"
 sleep 1s
-clear && echo -e "\e[32m
+clear && echo -e "\e[31m
 
               WARNING WARNING WARNING WARNING WARNING\e[0m"
 sleep 1s
-clear && echo -e "\e[32m
+clear && echo -e "\e[37m
 
               WARNING WARNING WARNING WARNING WARNING\e[0m"
 sleep 1s
-clear && echo -e "\e[32m
+clear && echo -e "\e[31m
+
+              WARNING WARNING WARNING WARNING WARNING\e[0m"
+sleep 1s
+clear && echo -e "\e[37m
+
+              WARNING WARNING WARNING WARNING WARNING\e[0m"
+sleep 1s
+clear && echo -e "\e[31m
 
               WARNING WARNING WARNING WARNING WARNING\e[0m"
 
@@ -202,14 +206,7 @@ protonup -d "~/.steam/root/compatibilitytools.d/"
 echo -e "\e[32m
          Done.
          \e[0m"
-sleep 1s
-echo -e "\e[32m
-         Download the Latest Proton GE Version.
-         \e[0m"
-protonup
-echo -e "\e[32m
-         Done.
-         \e[0m"
+
 
 sleep 5s
 clear && echo -e "\e[32m
@@ -231,6 +228,16 @@ echo -e "\e[30m
 #######################################################################
 \e[0m"
 sleep 3s
+sleep 1s
+echo -e "\e[32m
+         Download the Latest Proton GE Version.
+         \e[0m"
+protonup
+echo -e "\e[32m
+         Done.
+         \e[0m"
+sleep 1s
+
 echo -e "\e[32m
          Listing Installed Proton GE Files.
          \e[0m"
@@ -1555,3 +1562,11 @@ clear && echo -e "\e[35m
 sleep 3s
 
 reboot
+
+####### !bash   Created by Querzion 2021 - https://github.com/Querzion
+#
+#       Graphics are ANSI Shadow from 
+#       https://www.coolgenerator.com/ascii-text-generator
+#       https://www.shellhacks.com/bash-colors/
+#
+#######
