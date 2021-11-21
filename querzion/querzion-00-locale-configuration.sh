@@ -50,15 +50,8 @@ locale -a
 
 
 echo -e "\e[32m
-        This here is the problem... 
-        LET THE WITCHCRAFT BEGIN...
-
-        ALAKAZ..... What? What wrong command?...
-
-        Aaaah... That One... 
-        
-        LOCALE\e[0m"
-sudo locale-gen
+        Generating the locale file again...[0m"
+sudo locale-gen "en_US.UTF-8"
 sleep 5s
 
 echo -e "\e[31m
