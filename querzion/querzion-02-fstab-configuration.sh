@@ -8,33 +8,33 @@
 #################################################### SYSTEM DISK #####################################################
 # /dev/nvme0n1p3 LABEL=ROOT
 # UUID=e7573650-15de-4a72-97d6-3df66b677e21     /   btrfs rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@       0 0
-#LABEL=ROOT      /       btrfs   rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@   0 0
+# LABEL=ROOT      /       btrfs   rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@   0 0
 
 # /dev/nvme0n1p2 LABEL=EFIBOOT
 # UUID=198D-5496    /boot   vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0 1
-#LABEL=EFIBOOT   /boot   vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0 1
+# LABEL=EFIBOOT   /boot   vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0 1
 
 # /dev/sdc1 LABEL=SNAPS
 # UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698     /.snapshots     btrfs   defaults    0 1
-#LABEL=SNAPS     /.snapshots     btrfs   defaults,subvol=/@.snapshots    0 1
+# LABEL=SNAPS     /.snapshots     btrfs   defaults    0 1
 
 # /dev/sdc2     LABEL=SWAP
 # UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4     none    swap    defaults    0 1
-#LABEL=SWAP      none    swap    defaults        0 0
+# LABEL=SWAP      none    swap    defaults        0 0
 
 ################################################### SIDE-SHOW BOB ####################################################
 
 # /dev/sda1     LABEL=VIDEO
-# UUID=B0B25B2CB25AF5F6         /Video/M-S    ntfs    defaults,auto,noatime   0 2
-#LABEL=VIDEO     /video/media        ntfs    defaults,noatime,noauto,user,subvol=/@home/querzion/Video/M-S    0 2
+# UUID=B0B25B2CB25AF5F6     /home/querzion/Video/M-S    ntfs    defaults,auto,noatime   0 2
+# LABEL=VIDEO     /home/querzion/Video/M-S        ntfs    defaults,noatime,auto,user   0 2
 
 # /dev/sdb1     LABEL=SLOW
-# UUID=59cfb494-9180-4842-a25b-e028d166a382     /Games/Slow   ext4    defaults,noatime,auto   0 2
-#LABEL=SLOW      /Games/Slow       ext4    defaults,noatime,noauto,user,subvol=/@home/querzion/Games/Slow    0 2
+# UUID=59cfb494-9180-4842-a25b-e028d166a382     /home/querzion/Games/Slow   ext4    defaults,noatime,auto   0 2
+# LABEL=SLOW      /home/querzion/Games/Slow       ext4    defaults,noatime,auto,user   0 2
 
 # /dev/nvme1n1p1  LABEL=FAST
-# UUID=18379480-32ad-42b4-b251-75571a7ddc20     /Games/Fast   btrfs   defaults,auto,noatime,ssd,space_cache=v2    0 2
-#LABEL=FAST      /Games/Fast       btrfs   defaults,noauto,noatime,user,ssd,space_cache=v2,subvol=/@home/querzion/Games/Fast        0 2
+# UUID=18379480-32ad-42b4-b251-75571a7ddc20     /home/querzion/Games/Fast   btrfs   defaults,auto,noatime,ssd,space_cache=v2    0 2
+# LABEL=FAST      /home/querzion/Games/Fast       btrfs   defaults,auto,noatime,user,ssd,space_cache=v2        0 2
 
 clear && echo -e "\e[33m
 
