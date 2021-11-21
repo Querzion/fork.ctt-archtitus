@@ -32,10 +32,10 @@ sleep 1s
 echo -e "\e[30m
 #######################################################################
 ###                                                                 ###
-###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                    ###
+###                   \e[37mWELCOME TO MY POST SCRIPT\e[0m\e[30m                     ###
 ###             \e[37mFOR THE FINISHING TOUCH OF ARCHTITUS\e[0m\e[30m                ###
 ###                                                                 ###
-###     \e[37mYOU WILL BE ASKED TO ENTER YOUR PASSWORD MULTIPLE TIMES\e[0m\e[30m     ###
+###               \e[37mPASSWORD WILL BE ASKED OUT OF YOU\e[0m\e[30m                 ###
 ###                                                                 ###
 #######################################################################
 \e[0m"
@@ -233,18 +233,24 @@ echo -e "\e[30m
 
 echo -e "\e[34m
         YOU HAVE ONE MINUTE TO CLOSE OR KEEP ON WITH THE SCRIPT.
-         \e[0m"
-echo -e "\e[31m
-                Starting in 0 ...\e[0m"
+        \e[0m"
+sleep 2s
+
+echo -e "\e[32m
+        Next is the Snapper countdown... 
+        This is the time to change your mind. 
+        \e[0m"
+sleep 10s
+
 
 ####################################################################### COUNTDOWN
 
-echo -e "\e[30m
-                ./.countdown-snapper.sh -m 1\e[0m"
+echo -e "\e[34m
+        ./.countdown-snapper.sh -m 1\e[0m"
 sleep 1s
 
 cd ~/ArchTitus/querzion/
-./.countdown.sh -m 1
+./.countdown-snapper.sh -m 1
 
 #######################################################################
 #######################################################################
@@ -999,180 +1005,7 @@ echo -e "\e[32m
                
         This is Your Snapshots List. 
         \e[0m"
-        
-
 sleep 15s
-
-
-clear && echo -e "\e[32m
-
-
-            ███████╗███████╗████████╗ █████╗ ██████╗ 
-            ██╔════╝██╔════╝╚══██╔══╝██╔══██╗██╔══██╗
-            █████╗  ███████╗   ██║   ███████║██████╔╝
-            ██╔══╝  ╚════██║   ██║   ██╔══██║██╔══██╗
-            ██║     ███████║   ██║   ██║  ██║██████╔╝
-            ╚═╝     ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ 
-\e[0m"
-sleep 1s
-echo -e "\e[30m
-#######################################################################
-###                                                                 ###
-###                     \e[37mOPENING GPARTED & FSTAB\e[0m\e[30m                     ###
-###                                                                 ###
-###          \e[37mDON'T WANT TO CHANGEANYTHING? EXIT WITH CTRL + X\e[0m\e[30m       ###
-###                                                                 ###
-#######################################################################
-\e[0m"       
-sleep 1s 
-
-echo -e "\e[32m
-        Creating a backup directory for a fstab backup.
-        \e[0m"
-sudo mkdir /etc/backup
-echo -e "\e[32m
-        Done.
-        \e[0m"
-sleep 1s
-
-echo -e "\e[32m
-        Creating a backup of fstab into the backup folder.
-        \e[0m"
-sudo cp /etc/fstab /etc/backup/fstab
-echo -e "\e[32m
-        Done.
-        \e[0m"
-sleep 1s
-
-echo -e "\e[32m       
-        Creating Snapshot; Fstab-Backed.\e[0m"
-sudo snapper -c root create -c timeline --description Fstab-Backed
-sleep 3s
-echo -e "\e[32m
-         Done.
-         \e[0m"
-
-sleep 1s 
-echo -e "\e[32m       
-               
-        Information will now be created. 
-        All in order to add information to the fstab file.
-        \e[31mIf you do not know what you aro doing. 
-        Don't poke and prod with /etc/fstab...  
-        \e[0m"
-sleep 1s
-
-echo -e "\e[32m
-        Creating a new file that will be added to ~/Documents/.
-                ... fstab.UUID-Mounting-Guide ...
-        \e[0m"
-sleep 1s
-echo "
-
-###################################################  /etc/fstab  ####################################################
-#
-#              ENTER YOUR OWN UUID'S SINCE THESE ARE THE ONE'S I HAVE GENERATED IN FOR THIS REASON
-#
-#####################################################################################################################
-#
-#                       <FILE SYSTEM> <DIR> <FILE/PARTITION> <MOUNTING OPTIONS> <DUMP> <PASS>
-#
-#################################################### SYSTEM DISK ####################################################
-#
-#
-
-# Static information about the filesystems.
-# See fstab(5) for details.
-
-
-# /dev/nvme0n1p3 LABEL=ROOT
-UUID=e7573650-15de-4a72-97d6-3df66b677e21       /               btrfs           rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@   0 0
-
-# /dev/nvme0n1p2 LABEL=EFIBOOT
-UUID=198D-5496          /boot           vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0 2
-
-########################## SIDE-SHOW BOB ##############################
-
-
-
-
-
-# /dev/nvme0n1p3 LABEL=ROOT
-UUID=e7573650-15de-4a72-97d6-3df66b677e21	/         	btrfs     	rw,relatime,ssd,space_cache=v2,subvolid=256,subvol=/@	0 0
-
-# /dev/nvme0n1p2 LABEL=EFIBOOT
-UUID=198D-5496      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
-
-# /dev/sdc1     LABEL=SNAPS 
-UUID=f90bf1bc-28da-4210-9e52-9c0e3b10b698       /.snapshots/            btrfs           rw,defaults,space_cache=v2,subvolid=256,subvol=/@                0 1
-
-# /dev/sdc2     LABEL=SWAP
-UUID=4b6c95d9-bc87-445a-a675-92c06820b9a4       swap                    swap            defaults                                0 0                    
-
-################################################### SIDE-SHOW BOB ####################################################
-
-# /dev/sda1     LABEL=VIDEO 
-UUID=B0B25B2CB25AF5F6                           ~/Video/M-S/            ntfs            defaults,rw,auto,noatime                0 1
-
-# /dev/sdb1     LABEL=SLOW
-UUID=59cfb494-9180-4842-a25b-e028d166a382       ~/Games/Slow/           ext4            defaults,noatime,auto,rw                0 1
-
-# /dev/nvme1n1p1  LABEL=FAST
-UUID=18379480-32ad-42b4-b251-75571a7ddc20       ~/Games/Fast/           btrfs           defaults,auto,noatime,ssd,space_cache=v2                0 1
-
-" >> ~/Documents/.fstab.UUID-Mounting-Guide
-echo -e "\e[32m
-         Done. Saved in ~/Documents/ as ...
-         
-        \e[34m.fstab.UUID-Mounting-Guide
-         \e[0m"
-sleep 5s
-
-echo -e "\e[31m
-        Starting kate. This will open the file that 
-        was just created. It will be open till you close it.
-
-        Edit the file to your need. It will be saved as 
-        /etc/fstab in just a little bit. So it's very 
-        important that you know what you are about to do. 
-        \e[0m" 
-sleep 15s
-kate ~/Documents/.fstab.UUID-Mounting-Guide
-echo -e "\e[32m
-        Done. 
-        \e[0m"
-sleep 1s
-
-echo -e "\e[32m
-        Copying ~/Documents/.fstab.UUID-Mounting over as /etc/fstab.
-
-        \e[31mThis is the last thing before the reboot, so
-        if you don't want to have a headache over fstab now...
-        I suggest that you think over it while the 15 minute 
-        countdown takes over, If you want it to be overwritten...
-
-        Just press CTRL + C when you are in the countdown. 
-        \e[0m"
-sleep 15s
-
-cd ~/ArchTitus/querzion/
-./.countdown-fstab.sh -m 15
-
-clear && echo -e "\e[32m
-        WRITING OVER /etc/fstab ..... 
-        \e[0m"
-sleep 1s
-
-sudo cp ~/Documents/.fstab.UUID-Mounting-Guide /etc/fstab
-
-echo -e "\e[32m
-        Done. There is a backup fstab file... 
-
-                /etc/backup/fstab
-
-        Good Luck.
-        \e[0m"
-
 #######################################################################
 #######################################################################
 #######################################################################
@@ -1522,7 +1355,16 @@ echo -e "\e[30m
 
 
 sleep 3s
+clear && echo -e "\e[35m
 
+     ██████╗  ██████╗  ██████╗ ██████╗     ██████╗ ██╗   ██╗███████╗
+    ██╔════╝ ██╔═══██╗██╔═══██╗██╔══██╗    ██╔══██╗╚██╗ ██╔╝██╔════╝
+    ██║  ███╗██║   ██║██║   ██║██║  ██║    ██████╔╝ ╚████╔╝ █████╗  
+    ██║   ██║██║   ██║██║   ██║██║  ██║    ██╔══██╗  ╚██╔╝  ██╔══╝  
+    ╚██████╔╝╚██████╔╝╚██████╔╝██████╔╝    ██████╔╝   ██║   ███████╗
+     ╚═════╝  ╚═════╝  ╚═════╝ ╚═════╝     ╚═════╝    ╚═╝   ╚══════╝
+\e[0m"
+sleep 3s
 
 ####################### REBOOT COMMAND HERE ###########################
 
