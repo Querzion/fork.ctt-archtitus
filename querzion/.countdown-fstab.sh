@@ -109,6 +109,6 @@ echo -e "\e[30m
 \e[0m" 
 
 
-	sleep 1
+	sleep 1 
 done
 printf "\n"

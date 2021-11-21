@@ -828,7 +828,7 @@ echo -e "\e[32m
                     Settings > 
                            Steam Play > 
                                 Enable Steam Play > 
-                                        Proton-X.XX-GE-X > 
+                                        Proton-X.XX-GE-X >  
                                                 
                                                 OK 
 \e[0m"

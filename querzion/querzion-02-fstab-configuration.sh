@@ -89,7 +89,7 @@ sleep 1s
 echo -e "\e[32m
         Creating a backup directory for a fstab backup.
         \e[0m"
-sudo mkdir /etc/backup
+sudo mkdir /etc/backup 
 echo -e "\e[32m
         Done.
         \e[0m"

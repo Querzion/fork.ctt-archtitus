@@ -999,7 +999,7 @@ echo -e "\e[32m
         Next is to Display the Snapshots List. 
         \e[0m"
 sleep 7s
-snapper -c root list
+snapper -c root list 
 sleep 3s
 echo -e "\e[32m       
                

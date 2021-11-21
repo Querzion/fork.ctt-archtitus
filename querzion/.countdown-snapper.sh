@@ -12,7 +12,7 @@ if [ "$#" -lt "2" ] ; then
 	exit 1 
 fi 
  
-now=`date +%s` 
+now=`date +%s`
 
 
 

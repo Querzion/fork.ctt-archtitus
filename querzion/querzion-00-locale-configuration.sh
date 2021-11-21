@@ -106,7 +106,7 @@ echo -e "\e[32m
         We won't know if it worked until we check the file.
         With the \e[33m' locale '\e[0m\e[30m command, but first a reboot.
         
-        In 25 seconds... It's needed... \e[0m"
+        In 25 seconds... It's needed...\e[0m"
 
 sleep 10s 
 
