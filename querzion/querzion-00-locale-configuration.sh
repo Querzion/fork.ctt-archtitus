@@ -126,6 +126,10 @@ clear && echo -e "\e[34m
         The script will commense with the needed reboot[0m"
 sleep 25s
 
+sudo hwclock --show
+date
+sleep 5s
+
 systemsettings5
 sleep 3s 
 
