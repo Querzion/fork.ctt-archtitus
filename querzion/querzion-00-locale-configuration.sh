@@ -86,7 +86,7 @@ echo -e "\e[31m
         \e[0m"
 sleep 2s
 sudo rm /etc/locale.conf
-sudo rm ~/ArchTitus/querzion/files/locale.conf
+sudo rm ~/ArchTitus/querzion/files/etc/locale.conf
 echo "
 	LANGUAGE="" 
 		LANG = "en_US.UTF-8", 
@@ -102,9 +102,9 @@ echo "
 		LC_CTYPE = "en_US.UTF-8", 
 		LC_COLLATE = "sv_SE.UTF-8", 
 		LC_NUMERIC = "sv_SE.UTF-8", 
-		LC_ALL = """ >> ~/ArchTitus/querzion/files/locale.conf
+		LC_ALL = """ >> ~/ArchTitus/querzion/files/etc/locale.conf
 
-sudo cp ~/ArchTitus/querzion/files/locale.conf /etc/locale.conf
+sudo cp ~/ArchTitus/querzion/files/etc/locale.conf /etc/locale.conf
 
 sleep 3s
 echo -e "\e[32m
