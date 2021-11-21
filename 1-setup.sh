@@ -101,6 +101,7 @@ PKGS=(
 'exfat-utils'
 'extra-cmake-modules'
 'filelight'
+'filezilla'
 'ffmpeg'
 'flex'
 'fuse2'
