@@ -102,6 +102,14 @@ echo "
 sudo cp ~/ArchTitus/querzion/files/locale.conf /etc/locale.conf
 
 sleep 3s
+
+echo -e "\e[34m
+        Search for Date & Time and activate automatic time.[0m"
+sleep 10s
+
+systemsettings5
+sleep 3s 
+
 echo -e "\e[32m
         We won't know if it worked until we check the file.
         With the \e[33m' locale '\e[0m\e[30m command, but first a reboot.
@@ -109,20 +117,6 @@ echo -e "\e[32m
         In 25 seconds... It's needed... \e[0m"
 
 sleep 10s 
-
-clear && echo -e "\e[34m
-
-
-
-
-        The system setting will now open, so Search for Date & Time 
-        and there, activate automatic time & when you close the window.
-        
-        The script will commense with the needed reboot[0m"
-sleep 25s
-
-systemsettings5
-sleep 3s 
 
 clear && echo -e "\e[32m
 
