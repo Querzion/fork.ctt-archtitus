@@ -43,9 +43,14 @@ echo -e "\e[32m
         LOCALE\e[0m"
 sleep 5s 
 
+echo -e "\e[32m
+        locale\e[0m"
 locale
-locale -a
 
+echo -e "\e[32m
+        locale -a\e[0m"
+locale -a
+sleep 3s
 
 echo -e "\e[32m
         Generating the locale file again...[0m"
