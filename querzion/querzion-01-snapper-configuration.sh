@@ -1,13 +1,13 @@
 #######         Created by Querzion 2021 - https://github.com/Querzion
 #
 #       CHANGE QUERZION TO YOUR USERNAME. ( \e[37mALLOW_USER='"querzion"'\e[0m )
-#               AROUND LINE 644  
+#               AROUND LINE 649  
 #               
 #       ALSO CHANGE THE SNAPSHOT AMOUNTS. ( How often and how many you want to have. )
-#               AROUND LINE 680 - 733
+#               AROUND LINE 685 - 740
 #               
 #       COMMENT THE MOUNTING WITH A SHEBANG '#'. ( udisksctl mount -b /dev/sdc1 /.snapshots/ )
-#               AROUND LINE 777
+#               AROUND LINE 791
 #
 #######
 
