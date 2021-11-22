@@ -28,12 +28,25 @@ echo -e "\e[30m
 echo -e "\e[34m
         YOU HAVE ONE MINUTE TO CLOSE OR KEEP ON WITH THE SCRIPT, 
         BUT FIRST.. I NEED TO TAKE CARE OF A PROBLEM THAT IS IN...
-        DEEP NEED OF AN AILMENT.
+        DEEP NEED OF AN AILMENTS.
         \e[0m"
 sleep 3s
 
 echo -e "\e[32m
-        This here is the problem... 
+         Creating a KEYMAP for SV_DVORAK in vconsole.conf
+         \e[0m"
+sleep 2s
+
+cat <<EOF > /etc/vconsole.conf
+KEYMAP=dvorak-sv-a1
+EOF
+echo -e "\e[32m
+         Done.
+         \e[0m"
+
+
+echo -e "\e[32m
+        This here is also a problem... 
         LET THE WITCHCRAFT BEGIN...
 
         ALAKAZ..... What? What wrong command?...
@@ -106,6 +119,8 @@ echo "
 
 sudo cp ~/ArchTitus/querzion/files/etc/locale.conf /etc/locale.conf
 
+sudo sed -i 's/^LANG=C/LANG=en_US.UTF-8/'~/.config/plasma-localerc
+
 sleep 3s
 echo -e "\e[32m
         We won't know if it worked until we check the file.
@@ -115,6 +130,59 @@ echo -e "\e[32m
 
 sleep 10s 
 
+echo -e "\e[32m
+        Checking which timezone is active now...\e[0m"
+
+timedatectl | grep Time
+
+sleep 3s
+
+
+echo -e "\e[32m
+        Setting Timezone to Europe/Stockholm...\e[0m"
+
+sudo timedatectl set-timezone "Europe/Stockholm"
+
+# To see your timezone change, use this command; timedatectl list-timezones
+sleep 1s
+
+echo -e "\e[32m
+        Done.\e[0m"
+sleep 2s
+
+echo -e "\e[32m
+        Controlling the Change. (If there is one.)\e[0m"
+
+timedatectl | grep Time
+sleep 5s 
+
+echo -e "\e[32m
+        Is RTC activated?
+
+\e[0m"
+
+timedatectl | grep local
+
+echo -e "\e[32m
+        Setting local RTC to on.
+
+\e[0m"
+
+timedatectl set-local-rtc 1
+
+echo -e "\e[32m
+        Done?\e[0m"
+sleep 3s
+
+echo -e "\e[32m
+        Checking....\e[0m"
+sleep 1s
+
+timedatectl | grep local
+
+
+
+
 clear && echo -e "\e[34m
 
 
@@ -123,11 +191,13 @@ clear && echo -e "\e[34m
         The system setting will now open, so Search for Date & Time 
         and there, activate automatic time & when you close the window.
         
-        The script will commense with the needed reboot[0m"
+        The script will commense with the needed reboot\e[0m"
 sleep 25s
 
 sudo hwclock --show
 date
+
+
 sleep 5s
 
 systemsettings5

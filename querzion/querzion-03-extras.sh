@@ -537,67 +537,7 @@ echo -e "\e[32m
          \e[0m"
 
 sleep 3s
-echo -e "\e[32m
-         Adding language settings to locale.conf
-         English & Swedish Settings. To change them; 
-               
-               sudo nano /etc/locale.conf
-         \e[0m"
-sleep 5s
-echo -e "\e[32m
-         Starting Now. Enter your password.
-         \e[0m"
-sleep 1s
-sudo echo "LANGUAGE = ""," >> /etc/locale.conf
-sudo echo "       LANG = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_ADDRESS = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_NAME = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_MONETARY = "sv_SE.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_PAPER = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_IDENTIFICATION = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_TELEPHONE = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_MESSAGES = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_MEASUREMENT = "sv_SE.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_CTYPE = "en_US.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_TIME = "sv_SE.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_COLLATE = "sv_SE.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_NUMERIC = "sv_SE.UTF-8"," >> /etc/locale.conf
-sudo echo "       LC_ALL = """ >> /etc/locale.conf
 
-sleep 1s
-echo -e "\e[32m
-         Done.
-         \e[0m"
-sleep 1s
-echo -e "\e[32m
-         Generating a New Locale.gen file.
-         \e[0m"
-locale-gen
-echo -e "\e[32m
-         Done.
-         \e[0m"
-sleep 1s
-echo -e "\e[32m
-         Checking the Locale.conf file.
-         \e[0m"
-locale
-echo -e "\e[32m
-         Done.
-         \e[0m"
-sleep 3s
-
-echo -e "\e[32m
-         Creating a KEYMAP for SV_DVORAK in vconsole.conf
-         \e[0m"
-sleep 2s
-
-cat <<EOF > /etc/vconsole.conf
-KEYMAP=dvorak-sv-a1
-EOF
-echo -e "\e[32m
-         Done.
-         \e[0m"
-sleep 1s
 echo -e "\e[32m
          Enabling Snap.
          \e[0m"
