@@ -30,12 +30,27 @@ echo -e "\e[34m
         BUT FIRST.. I NEED TO TAKE CARE OF A PROBLEM THAT IS IN...
         DEEP NEED OF AN AILMENTS.
         \e[0m"
-sleep 3s
+sleep 15s
 
-echo -e "\e[32m
-         Creating a KEYMAP for SV_DVORAK in vconsole.conf
-         \e[0m"
-sleep 2s
+clear && echo -e "\e[34m
+
+
+        ██╗      █████╗ ██╗   ██╗ ██████╗ ██╗   ██╗████████╗
+        ██║     ██╔══██╗╚██╗ ██╔╝██╔═══██╗██║   ██║╚══██╔══╝
+        ██║     ███████║ ╚████╔╝ ██║   ██║██║   ██║   ██║   
+        ██║     ██╔══██║  ╚██╔╝  ██║   ██║██║   ██║   ██║   
+        ███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝   ██║   
+        ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝    ╚═╝   \e[0m" 
+sleep 1s 
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###       \e[37mCREATING KEYMAP=sv-dvorak-a1 IN vconsole.conf\e[0m\e[30m             ###
+###                                                                 ###
+#######################################################################
+\e[0m"
+
+sleep 3s 
 
 cat <<EOF > /etc/vconsole.conf
 KEYMAP=dvorak-sv-a1
@@ -43,6 +58,25 @@ EOF
 echo -e "\e[32m
          Done.
          \e[0m"
+sleep 3s
+
+clear && echo -e "\e[34m
+
+
+        ██╗      ██████╗  ██████╗ █████╗ ██╗     ███████╗
+        ██║     ██╔═══██╗██╔════╝██╔══██╗██║     ██╔════╝
+        ██║     ██║   ██║██║     ███████║██║     █████╗  
+        ██║     ██║   ██║██║     ██╔══██║██║     ██╔══╝  
+        ███████╗╚██████╔╝╚██████╗██║  ██║███████╗███████╗
+        ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝\e[0m"
+sleep 1s 
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###          \e[37mFIXING LANGUAGE SETTINGS FOR THE SYSTEM.\e[0m\e[30m               ###
+###                                                                 ###
+#######################################################################
+        \e[0m"  
 
 
 echo -e "\e[32m
@@ -130,6 +164,24 @@ echo -e "\e[32m
 
 sleep 10s 
 
+clear && echo -e "\e[34m
+
+
+    ████████╗██╗███╗   ███╗███████╗██████╗  █████╗ ████████╗███████╗
+    ╚══██╔══╝██║████╗ ████║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+       ██║   ██║██╔████╔██║█████╗  ██║  ██║███████║   ██║   █████╗  
+       ██║   ██║██║╚██╔╝██║██╔══╝  ██║  ██║██╔══██║   ██║   ██╔══╝  
+       ██║   ██║██║ ╚═╝ ██║███████╗██████╔╝██║  ██║   ██║   ███████╗
+       ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝\e[0m"
+sleep 1s 
+echo -e "\e[30m
+#######################################################################
+###                                                                 ###
+###          \e[37mFIXING LANGUAGE SETTINGS FOR THE SYSTEM.\e[0m\e[30m               ###
+###                                                                 ###
+#######################################################################
+        \e[0m" 
+
 echo -e "\e[32m
         Checking which timezone is active now...\e[0m"
 
@@ -164,11 +216,11 @@ echo -e "\e[32m
 timedatectl | grep local
 
 echo -e "\e[32m
-        Setting local RTC to on.
+        Setting NTP to on...
 
 \e[0m"
 
-timedatectl set-local-rtc 1
+timedatectl set-ntp true
 
 echo -e "\e[32m
         Done?\e[0m"
@@ -178,30 +230,8 @@ echo -e "\e[32m
         Checking....\e[0m"
 sleep 1s
 
-timedatectl | grep local
-
-
-
-
-clear && echo -e "\e[34m
-
-
-
-
-        The system setting will now open, so Search for Date & Time 
-        and there, activate automatic time & when you close the window.
-        
-        The script will commense with the needed reboot\e[0m"
-sleep 25s
-
-sudo hwclock --show
-date
-
-
-sleep 5s
-
-systemsettings5
-sleep 3s 
+timedatectl status
+sleep 10s
 
 clear && echo -e "\e[32m
 
